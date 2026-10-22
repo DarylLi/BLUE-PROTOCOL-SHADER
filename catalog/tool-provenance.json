@@ -1,0 +1,46 @@
+{
+  "tools": [
+    {
+      "name": "repak-original-0.2.2",
+      "file": "repak.exe",
+      "sha256": "c74afd89085d5203944f274203f704ceb6bb2d5d11cf063a1c2151e84e5d6f56",
+      "bundled": false
+    },
+    {
+      "name": "repak-compatible",
+      "file": "repak.exe",
+      "sha256": "d00587e7e4998256916f557cd6a637e8a3ed641632653794cf56c4fdb8fd53b0",
+      "bundled": false
+    },
+    {
+      "name": "oodle-2.9.10",
+      "file": "oo2core_9_win64.dll",
+      "sha256": "6f5d41a7892ea6b2db420f2458dad2f84a63901c9a93ce9497337b16c195f457",
+      "bundled": false
+    },
+    {
+      "name": "cmd_Decompiler-1.3.16",
+      "file": "cmd_Decompiler.exe",
+      "sha256": "67582ced9261b8fb23a50cee09c788c821d0524d40264721369b410d5321dab8",
+      "bundled": false
+    },
+    {
+      "name": "UAssetGUI-1.1.0",
+      "file": "UAssetGUI.exe",
+      "sha256": "b7d75c0893f1a60e565853ae638bc21f2416cd12c2d9d854e297abb87ceb3263",
+      "bundled": false
+    }
+  ],
+  "repakCompatibility": {
+    "originalSha256": "c74afd89085d5203944f274203f704ceb6bb2d5d11cf063a1c2151e84e5d6f56",
+    "modifiedSha256": "d00587e7e4998256916f557cd6a637e8a3ed641632653794cf56c4fdb8fd53b0",
+    "patchOffsets": [
+      3067152,
+      3067472
+    ],
+    "comparisonOffset": 655571,
+    "changedBytes": 44,
+    "reason": "Oodle 2.9.10 DLL pin; retain repak 0.2.2 deleted-entry handling",
+    "oodleSha256": "6f5d41a7892ea6b2db420f2458dad2f84a63901c9a93ce9497337b16c195f457"
+  }
+}

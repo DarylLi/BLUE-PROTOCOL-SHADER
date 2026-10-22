@@ -1,0 +1,15 @@
+// Decompiled with 3Dmigoto 1.3.16. Reconstructed HLSL; not original source.
+
+
+
+// 3Dmigoto declarations
+#define cmp -
+
+
+void main(
+  nointerpolation uint v0 : TEXCOORD0,
+  out uint o0 : SV_Target0)
+{
+  o0.x = v0.x;
+  return;
+}

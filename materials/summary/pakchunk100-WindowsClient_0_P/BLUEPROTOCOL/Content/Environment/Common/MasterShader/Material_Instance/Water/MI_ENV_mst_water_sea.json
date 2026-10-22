@@ -1,0 +1,2891 @@
+{
+  "asset": "pakchunk100-WindowsClient_0_P/BLUEPROTOCOL/Content/Environment/Common/MasterShader/Material_Instance/Water/MI_ENV_mst_water_sea.uasset",
+  "pak": "pakchunk100-WindowsClient_0_P.pak",
+  "sourceJson": "materials/raw/pakchunk100-WindowsClient_0_P/BLUEPROTOCOL/Content/Environment/Common/MasterShader/Material_Instance/Water/MI_ENV_mst_water_sea.json",
+  "objects": [
+    {
+      "name": "MI_ENV_mst_water_sea",
+      "class": "/Script/Engine.MaterialInstanceConstant",
+      "parent": "/Game/Environment/Common/MasterShader/Material/M_ENV_mst_water.M_ENV_mst_water",
+      "shadingModel": null,
+      "blendMode": null,
+      "parameters": {
+        "ScalarParameterValues": [
+          {
+            "name": "DF_ApplyRate",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "DF_ApplyRate"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 1
+          },
+          {
+            "name": "EdgeBubbleArea_Brightness",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "EdgeBubbleArea_Brightness"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 0.75
+          },
+          {
+            "name": "EdgeBubbleArea_FadeDistance",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "EdgeBubbleArea_FadeDistance"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 800
+          },
+          {
+            "name": "EdgeBubbleArea_Min",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "EdgeBubbleArea_Min"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 50
+          },
+          {
+            "name": "EdgeGradiationBubbleArea_Brightness",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "EdgeGradiationBubbleArea_Brightness"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 2
+          },
+          {
+            "name": "EdgeGradiationBubbleArea_FadeDistance",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "EdgeGradiationBubbleArea_FadeDistance"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 20
+          },
+          {
+            "name": "EdgeGradiationBubbleArea_FresnelAdjust",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "EdgeGradiationBubbleArea_FresnelAdjust"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 1
+          },
+          {
+            "name": "GlobalNoise_Brightness_EdgeBubble",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "GlobalNoise_Brightness_EdgeBubble"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 0.10000000149011612
+          },
+          {
+            "name": "GlobalNoise_Contrast_EdgeBubble",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "GlobalNoise_Contrast_EdgeBubble"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 1.5
+          },
+          {
+            "name": "GlobalNoise_Contrast_SurfaceBubble",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "GlobalNoise_Contrast_SurfaceBubble"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 0.25
+          },
+          {
+            "name": "GlobalNoise_TexScale_Large",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "GlobalNoise_TexScale_Large"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 20000
+          },
+          {
+            "name": "GlobalNoise_TexScale_Small",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "GlobalNoise_TexScale_Small"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 300
+          },
+          {
+            "name": "NormalFlatness",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "NormalFlatness"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 0.9800000190734863
+          },
+          {
+            "name": "NormalFlatness_Large",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "NormalFlatness_Large"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": "+0"
+          },
+          {
+            "name": "NormalFlatness_Small",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "NormalFlatness_Small"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": "+0"
+          },
+          {
+            "name": "NormalFlatten_Contrast",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "NormalFlatten_Contrast"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 0.25
+          },
+          {
+            "name": "NormalFlatten_Distance",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "NormalFlatten_Distance"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 200000
+          },
+          {
+            "name": "NormalMipBias_Large",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "NormalMipBias_Large"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": "+0"
+          },
+          {
+            "name": "WaterNormal_TexScale",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "WaterNormal_TexScale"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 4000
+          },
+          {
+            "name": "WaterNormal_TexScale_Large",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "WaterNormal_TexScale_Large"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 40000
+          },
+          {
+            "name": "DepthOpacity_Contrast",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "DepthOpacity_Contrast"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 0.12619000673294067
+          },
+          {
+            "name": "DepthOpacity_FadeDistance",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "DepthOpacity_FadeDistance"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 1500
+          },
+          {
+            "name": "DepthOpacity_MaxOpacity",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "DepthOpacity_MaxOpacity"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 1
+          },
+          {
+            "name": "FresnelOpacity_Falloff",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "FresnelOpacity_Falloff"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 2
+          },
+          {
+            "name": "FresnelOpacity_MinOpacity",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "FresnelOpacity_MinOpacity"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 0.75
+          },
+          {
+            "name": "SeaWaterCycleOpacity_Contrast",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "SeaWaterCycleOpacity_Contrast"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": "+0"
+          },
+          {
+            "name": "ScrollScaleU",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "ScrollScaleU"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 0.5
+          },
+          {
+            "name": "ScrollScaleV",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "ScrollScaleV"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": -0.612500011920929
+          },
+          {
+            "name": "ScrollSpeed",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "ScrollSpeed"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 8
+          },
+          {
+            "name": "ScrollSpeed_SeaShoreSuppression",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "ScrollSpeed_SeaShoreSuppression"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 0.0002500000118743628
+          },
+          {
+            "name": "ScrollSpeed_SeaShoreSuppression_FadeDistance",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "ScrollSpeed_SeaShoreSuppression_FadeDistance"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 2500
+          },
+          {
+            "name": "ScrollU",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "ScrollU"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 0.004000000189989805
+          },
+          {
+            "name": "ScrollV",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "ScrollV"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": -0.004000000189989805
+          },
+          {
+            "name": "WindAngle",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "WindAngle"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 0.9750000238418579
+          },
+          {
+            "name": "Metalic",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "Metalic"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": "+0"
+          },
+          {
+            "name": "Roughness",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "Roughness"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 0.15000000596046448
+          },
+          {
+            "name": "Roughness_Max",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "Roughness_Max"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 0.15000000596046448
+          },
+          {
+            "name": "Specular",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "Specular"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 1
+          },
+          {
+            "name": "Reflection_FresnelFalloff",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "Reflection_FresnelFalloff"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 3
+          },
+          {
+            "name": "ReflectionCubeMap_Brightness",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "ReflectionCubeMap_Brightness"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 1
+          },
+          {
+            "name": "ReflectionCubeMap_Contrast",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "ReflectionCubeMap_Contrast"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 2
+          },
+          {
+            "name": "SeaShoreRefrectionSuppression",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "SeaShoreRefrectionSuppression"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 3.75
+          },
+          {
+            "name": "Refraction",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "Refraction"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 0.8999999761581421
+          },
+          {
+            "name": "Specular_BlendContrast",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "Specular_BlendContrast"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 1.5
+          },
+          {
+            "name": "Specular_BlendDistance",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "Specular_BlendDistance"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 200000
+          },
+          {
+            "name": "Specular_far",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "Specular_far"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 0.05000000074505806
+          },
+          {
+            "name": "Specular_FresnelContrast",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "Specular_FresnelContrast"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 1
+          },
+          {
+            "name": "Specular_near",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "Specular_near"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 1
+          },
+          {
+            "name": "SurfaceBubble_ChangeSpeed",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "SurfaceBubble_ChangeSpeed"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 0.3499999940395355
+          },
+          {
+            "name": "SurfaceBubble_ScrollSpeed",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "SurfaceBubble_ScrollSpeed"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 0.30000001192092896
+          },
+          {
+            "name": "SurfaceBubbleArea_Contrast",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "SurfaceBubbleArea_Contrast"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 0.5
+          },
+          {
+            "name": "SurfaceBubbleArea_FadeDistance",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "SurfaceBubbleArea_FadeDistance"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 200
+          },
+          {
+            "name": "TopBubble_Contrast",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "TopBubble_Contrast"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 0.699999988079071
+          },
+          {
+            "name": "TopBubble_MaxBrightness",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "TopBubble_MaxBrightness"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 0.5
+          },
+          {
+            "name": "TopBubble_Scale",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "TopBubble_Scale"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 5
+          },
+          {
+            "name": "TopBubble_Threshold",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "TopBubble_Threshold"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 0.699999988079071
+          },
+          {
+            "name": "Move_Scale",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "Move_Scale"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 50
+          },
+          {
+            "name": "Move_Speed",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "Move_Speed"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 0.10000000149011612
+          },
+          {
+            "name": "Move_TimingShift",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "Move_TimingShift"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 0.20000000298023224
+          },
+          {
+            "name": "WPO_Intensity",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "WPO_Intensity"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 1
+          },
+          {
+            "name": "WPOMask_Contrast",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "WPOMask_Contrast"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 0.019999999552965164
+          },
+          {
+            "name": "WPOMask_ScrollSpeed",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "WPOMask_ScrollSpeed"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 0.00009999999747378752
+          },
+          {
+            "name": "WPOMask_Tiling",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "WPOMask_Tiling"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 1000000
+          },
+          {
+            "name": "RefractionDepthBias",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "RefractionDepthBias"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": "+0"
+          }
+        ],
+        "VectorParameterValues": [
+          {
+            "name": "FresnelColor",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "FresnelColor"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": [
+              {
+                "name": "ParameterValue",
+                "arrayIndex": 0,
+                "value": {
+                  "$type": "UAssetAPI.UnrealTypes.FLinearColor, UAssetAPI",
+                  "R": "+0",
+                  "G": 0.03645800054073334,
+                  "B": 0.030381999909877777,
+                  "A": 1
+                }
+              }
+            ]
+          },
+          {
+            "name": "WaterColor",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "WaterColor"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": [
+              {
+                "name": "ParameterValue",
+                "arrayIndex": 0,
+                "value": {
+                  "$type": "UAssetAPI.UnrealTypes.FLinearColor, UAssetAPI",
+                  "R": 0.014159999787807465,
+                  "G": 0.07043799757957458,
+                  "B": 0.15104199945926666,
+                  "A": 1
+                }
+              }
+            ]
+          },
+          {
+            "name": "SurfaceBubbleColor",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "SurfaceBubbleColor"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": [
+              {
+                "name": "ParameterValue",
+                "arrayIndex": 0,
+                "value": {
+                  "$type": "UAssetAPI.UnrealTypes.FLinearColor, UAssetAPI",
+                  "R": 1,
+                  "G": 1,
+                  "B": 1,
+                  "A": 1
+                }
+              }
+            ]
+          },
+          {
+            "name": "SurfaceBubbleColor_Shadow",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "SurfaceBubbleColor_Shadow"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": [
+              {
+                "name": "ParameterValue",
+                "arrayIndex": 0,
+                "value": {
+                  "$type": "UAssetAPI.UnrealTypes.FLinearColor, UAssetAPI",
+                  "R": "+0",
+                  "G": 0.0049310000613331795,
+                  "B": 0.009999999776482582,
+                  "A": 1
+                }
+              }
+            ]
+          }
+        ],
+        "TextureParameterValues": [
+          {
+            "name": "WPO_DistortionMask",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "WPO_DistortionMask"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": "/Game/Environment/Common/BP/LightBeam/Textures/T_TilingNoise02_M.T_TilingNoise02_M"
+          }
+        ]
+      },
+      "properties": [
+        {
+          "name": "Parent",
+          "value": -3
+        },
+        {
+          "name": "bHasStaticPermutationResource",
+          "value": true
+        },
+        {
+          "name": "BasePropertyOverrides",
+          "value": [
+            {
+              "name": "BlendMode",
+              "arrayIndex": 0,
+              "value": {
+                "enum": "EBlendMode",
+                "value": "BLEND_Translucent"
+              }
+            },
+            {
+              "name": "OpacityMaskClipValue",
+              "arrayIndex": 0,
+              "value": 0.33329999446868896
+            },
+            {
+              "name": "DirectionalLightHeightScale",
+              "arrayIndex": 0,
+              "value": false
+            }
+          ]
+        },
+        {
+          "name": "StaticParameters",
+          "value": [
+            {
+              "name": "StaticSwitchParameters",
+              "arrayIndex": 0,
+              "value": [
+                {
+                  "name": "StaticSwitchParameters",
+                  "arrayIndex": 0,
+                  "structType": "StaticSwitchParameter",
+                  "value": [
+                    {
+                      "name": "Value",
+                      "arrayIndex": 0,
+                      "value": false
+                    },
+                    {
+                      "name": "ParameterInfo",
+                      "arrayIndex": 0,
+                      "structType": "MaterialParameterInfo",
+                      "value": [
+                        {
+                          "name": "Name",
+                          "arrayIndex": 0,
+                          "value": "UseDistantFog"
+                        },
+                        {
+                          "name": "Association",
+                          "arrayIndex": 0,
+                          "value": {
+                            "enum": "EMaterialParameterAssociation",
+                            "value": "GlobalParameter"
+                          }
+                        },
+                        {
+                          "name": "Index",
+                          "arrayIndex": 0,
+                          "value": -1
+                        }
+                      ]
+                    },
+                    {
+                      "name": "bOverride",
+                      "arrayIndex": 0,
+                      "value": true
+                    },
+                    {
+                      "name": "ExpressionGUID",
+                      "arrayIndex": 0,
+                      "structType": "Guid",
+                      "value": [
+                        {
+                          "name": "ExpressionGUID",
+                          "arrayIndex": 0,
+                          "value": "{C49E495D-4C31-0B0D-448D-41908EA6F183}"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "StaticSwitchParameters",
+                  "arrayIndex": 0,
+                  "structType": "StaticSwitchParameter",
+                  "value": [
+                    {
+                      "name": "Value",
+                      "arrayIndex": 0,
+                      "value": true
+                    },
+                    {
+                      "name": "ParameterInfo",
+                      "arrayIndex": 0,
+                      "structType": "MaterialParameterInfo",
+                      "value": [
+                        {
+                          "name": "Name",
+                          "arrayIndex": 0,
+                          "value": "UseEdgeBubble"
+                        },
+                        {
+                          "name": "Association",
+                          "arrayIndex": 0,
+                          "value": {
+                            "enum": "EMaterialParameterAssociation",
+                            "value": "GlobalParameter"
+                          }
+                        },
+                        {
+                          "name": "Index",
+                          "arrayIndex": 0,
+                          "value": -1
+                        }
+                      ]
+                    },
+                    {
+                      "name": "bOverride",
+                      "arrayIndex": 0,
+                      "value": true
+                    },
+                    {
+                      "name": "ExpressionGUID",
+                      "arrayIndex": 0,
+                      "structType": "Guid",
+                      "value": [
+                        {
+                          "name": "ExpressionGUID",
+                          "arrayIndex": 0,
+                          "value": "{CE2BB361-44C2-5317-C08F-E4ABED97E151}"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "StaticSwitchParameters",
+                  "arrayIndex": 0,
+                  "structType": "StaticSwitchParameter",
+                  "value": [
+                    {
+                      "name": "Value",
+                      "arrayIndex": 0,
+                      "value": true
+                    },
+                    {
+                      "name": "ParameterInfo",
+                      "arrayIndex": 0,
+                      "structType": "MaterialParameterInfo",
+                      "value": [
+                        {
+                          "name": "Name",
+                          "arrayIndex": 0,
+                          "value": "UseEdgeGradiationBubble"
+                        },
+                        {
+                          "name": "Association",
+                          "arrayIndex": 0,
+                          "value": {
+                            "enum": "EMaterialParameterAssociation",
+                            "value": "GlobalParameter"
+                          }
+                        },
+                        {
+                          "name": "Index",
+                          "arrayIndex": 0,
+                          "value": -1
+                        }
+                      ]
+                    },
+                    {
+                      "name": "bOverride",
+                      "arrayIndex": 0,
+                      "value": true
+                    },
+                    {
+                      "name": "ExpressionGUID",
+                      "arrayIndex": 0,
+                      "structType": "Guid",
+                      "value": [
+                        {
+                          "name": "ExpressionGUID",
+                          "arrayIndex": 0,
+                          "value": "{845F03FF-4C61-209B-4893-B3B63B242852}"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "StaticSwitchParameters",
+                  "arrayIndex": 0,
+                  "structType": "StaticSwitchParameter",
+                  "value": [
+                    {
+                      "name": "Value",
+                      "arrayIndex": 0,
+                      "value": true
+                    },
+                    {
+                      "name": "ParameterInfo",
+                      "arrayIndex": 0,
+                      "structType": "MaterialParameterInfo",
+                      "value": [
+                        {
+                          "name": "Name",
+                          "arrayIndex": 0,
+                          "value": "UseOpacityDistanceCorrection"
+                        },
+                        {
+                          "name": "Association",
+                          "arrayIndex": 0,
+                          "value": {
+                            "enum": "EMaterialParameterAssociation",
+                            "value": "GlobalParameter"
+                          }
+                        },
+                        {
+                          "name": "Index",
+                          "arrayIndex": 0,
+                          "value": -1
+                        }
+                      ]
+                    },
+                    {
+                      "name": "bOverride",
+                      "arrayIndex": 0,
+                      "value": true
+                    },
+                    {
+                      "name": "ExpressionGUID",
+                      "arrayIndex": 0,
+                      "structType": "Guid",
+                      "value": [
+                        {
+                          "name": "ExpressionGUID",
+                          "arrayIndex": 0,
+                          "value": "{81F8811D-424D-D534-0E26-AEAACC6E0BC3}"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "StaticSwitchParameters",
+                  "arrayIndex": 0,
+                  "structType": "StaticSwitchParameter",
+                  "value": [
+                    {
+                      "name": "Value",
+                      "arrayIndex": 0,
+                      "value": true
+                    },
+                    {
+                      "name": "ParameterInfo",
+                      "arrayIndex": 0,
+                      "structType": "MaterialParameterInfo",
+                      "value": [
+                        {
+                          "name": "Name",
+                          "arrayIndex": 0,
+                          "value": "UseSeaWaterCycleOpacity"
+                        },
+                        {
+                          "name": "Association",
+                          "arrayIndex": 0,
+                          "value": {
+                            "enum": "EMaterialParameterAssociation",
+                            "value": "GlobalParameter"
+                          }
+                        },
+                        {
+                          "name": "Index",
+                          "arrayIndex": 0,
+                          "value": -1
+                        }
+                      ]
+                    },
+                    {
+                      "name": "bOverride",
+                      "arrayIndex": 0,
+                      "value": true
+                    },
+                    {
+                      "name": "ExpressionGUID",
+                      "arrayIndex": 0,
+                      "structType": "Guid",
+                      "value": [
+                        {
+                          "name": "ExpressionGUID",
+                          "arrayIndex": 0,
+                          "value": "{BC2D8E62-4A39-3641-5794-FAAECBD793DB}"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "StaticSwitchParameters",
+                  "arrayIndex": 0,
+                  "structType": "StaticSwitchParameter",
+                  "value": [
+                    {
+                      "name": "Value",
+                      "arrayIndex": 0,
+                      "value": true
+                    },
+                    {
+                      "name": "ParameterInfo",
+                      "arrayIndex": 0,
+                      "structType": "MaterialParameterInfo",
+                      "value": [
+                        {
+                          "name": "Name",
+                          "arrayIndex": 0,
+                          "value": "UseSeaShoreReflectionSuppression"
+                        },
+                        {
+                          "name": "Association",
+                          "arrayIndex": 0,
+                          "value": {
+                            "enum": "EMaterialParameterAssociation",
+                            "value": "GlobalParameter"
+                          }
+                        },
+                        {
+                          "name": "Index",
+                          "arrayIndex": 0,
+                          "value": -1
+                        }
+                      ]
+                    },
+                    {
+                      "name": "bOverride",
+                      "arrayIndex": 0,
+                      "value": true
+                    },
+                    {
+                      "name": "ExpressionGUID",
+                      "arrayIndex": 0,
+                      "structType": "Guid",
+                      "value": [
+                        {
+                          "name": "ExpressionGUID",
+                          "arrayIndex": 0,
+                          "value": "{E7408F19-4F29-69FE-F696-52B80453CFAD}"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "StaticSwitchParameters",
+                  "arrayIndex": 0,
+                  "structType": "StaticSwitchParameter",
+                  "value": [
+                    {
+                      "name": "Value",
+                      "arrayIndex": 0,
+                      "value": true
+                    },
+                    {
+                      "name": "ParameterInfo",
+                      "arrayIndex": 0,
+                      "structType": "MaterialParameterInfo",
+                      "value": [
+                        {
+                          "name": "Name",
+                          "arrayIndex": 0,
+                          "value": "UseSurfaceBubble"
+                        },
+                        {
+                          "name": "Association",
+                          "arrayIndex": 0,
+                          "value": {
+                            "enum": "EMaterialParameterAssociation",
+                            "value": "GlobalParameter"
+                          }
+                        },
+                        {
+                          "name": "Index",
+                          "arrayIndex": 0,
+                          "value": -1
+                        }
+                      ]
+                    },
+                    {
+                      "name": "bOverride",
+                      "arrayIndex": 0,
+                      "value": true
+                    },
+                    {
+                      "name": "ExpressionGUID",
+                      "arrayIndex": 0,
+                      "structType": "Guid",
+                      "value": [
+                        {
+                          "name": "ExpressionGUID",
+                          "arrayIndex": 0,
+                          "value": "{14607F94-46F2-49ED-E386-ADBCC1BDA5BF}"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "StaticSwitchParameters",
+                  "arrayIndex": 0,
+                  "structType": "StaticSwitchParameter",
+                  "value": [
+                    {
+                      "name": "Value",
+                      "arrayIndex": 0,
+                      "value": true
+                    },
+                    {
+                      "name": "ParameterInfo",
+                      "arrayIndex": 0,
+                      "structType": "MaterialParameterInfo",
+                      "value": [
+                        {
+                          "name": "Name",
+                          "arrayIndex": 0,
+                          "value": "UseTopBubble"
+                        },
+                        {
+                          "name": "Association",
+                          "arrayIndex": 0,
+                          "value": {
+                            "enum": "EMaterialParameterAssociation",
+                            "value": "GlobalParameter"
+                          }
+                        },
+                        {
+                          "name": "Index",
+                          "arrayIndex": 0,
+                          "value": -1
+                        }
+                      ]
+                    },
+                    {
+                      "name": "bOverride",
+                      "arrayIndex": 0,
+                      "value": true
+                    },
+                    {
+                      "name": "ExpressionGUID",
+                      "arrayIndex": 0,
+                      "structType": "Guid",
+                      "value": [
+                        {
+                          "name": "ExpressionGUID",
+                          "arrayIndex": 0,
+                          "value": "{FE5A43F0-450F-95E5-7472-E1B0C9E4DAFA}"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "StaticSwitchParameters",
+                  "arrayIndex": 0,
+                  "structType": "StaticSwitchParameter",
+                  "value": [
+                    {
+                      "name": "Value",
+                      "arrayIndex": 0,
+                      "value": true
+                    },
+                    {
+                      "name": "ParameterInfo",
+                      "arrayIndex": 0,
+                      "structType": "MaterialParameterInfo",
+                      "value": [
+                        {
+                          "name": "Name",
+                          "arrayIndex": 0,
+                          "value": "UseAsSeaWater"
+                        },
+                        {
+                          "name": "Association",
+                          "arrayIndex": 0,
+                          "value": {
+                            "enum": "EMaterialParameterAssociation",
+                            "value": "GlobalParameter"
+                          }
+                        },
+                        {
+                          "name": "Index",
+                          "arrayIndex": 0,
+                          "value": -1
+                        }
+                      ]
+                    },
+                    {
+                      "name": "bOverride",
+                      "arrayIndex": 0,
+                      "value": true
+                    },
+                    {
+                      "name": "ExpressionGUID",
+                      "arrayIndex": 0,
+                      "structType": "Guid",
+                      "value": [
+                        {
+                          "name": "ExpressionGUID",
+                          "arrayIndex": 0,
+                          "value": "{1658B5BA-4AFB-6FF0-AD10-A0A5EE1F6FEE}"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "StaticSwitchParameters",
+                  "arrayIndex": 0,
+                  "structType": "StaticSwitchParameter",
+                  "value": [
+                    {
+                      "name": "Value",
+                      "arrayIndex": 0,
+                      "value": true
+                    },
+                    {
+                      "name": "ParameterInfo",
+                      "arrayIndex": 0,
+                      "structType": "MaterialParameterInfo",
+                      "value": [
+                        {
+                          "name": "Name",
+                          "arrayIndex": 0,
+                          "value": "UseVTC_WPOControl"
+                        },
+                        {
+                          "name": "Association",
+                          "arrayIndex": 0,
+                          "value": {
+                            "enum": "EMaterialParameterAssociation",
+                            "value": "GlobalParameter"
+                          }
+                        },
+                        {
+                          "name": "Index",
+                          "arrayIndex": 0,
+                          "value": -1
+                        }
+                      ]
+                    },
+                    {
+                      "name": "bOverride",
+                      "arrayIndex": 0,
+                      "value": true
+                    },
+                    {
+                      "name": "ExpressionGUID",
+                      "arrayIndex": 0,
+                      "structType": "Guid",
+                      "value": [
+                        {
+                          "name": "ExpressionGUID",
+                          "arrayIndex": 0,
+                          "value": "{B46F4EE4-40EA-5313-6D43-D586C6FFFC2A}"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "StaticSwitchParameters",
+                  "arrayIndex": 0,
+                  "structType": "StaticSwitchParameter",
+                  "value": [
+                    {
+                      "name": "Value",
+                      "arrayIndex": 0,
+                      "value": true
+                    },
+                    {
+                      "name": "ParameterInfo",
+                      "arrayIndex": 0,
+                      "structType": "MaterialParameterInfo",
+                      "value": [
+                        {
+                          "name": "Name",
+                          "arrayIndex": 0,
+                          "value": "UseWPO"
+                        },
+                        {
+                          "name": "Association",
+                          "arrayIndex": 0,
+                          "value": {
+                            "enum": "EMaterialParameterAssociation",
+                            "value": "GlobalParameter"
+                          }
+                        },
+                        {
+                          "name": "Index",
+                          "arrayIndex": 0,
+                          "value": -1
+                        }
+                      ]
+                    },
+                    {
+                      "name": "bOverride",
+                      "arrayIndex": 0,
+                      "value": true
+                    },
+                    {
+                      "name": "ExpressionGUID",
+                      "arrayIndex": 0,
+                      "structType": "Guid",
+                      "value": [
+                        {
+                          "name": "ExpressionGUID",
+                          "arrayIndex": 0,
+                          "value": "{A945D2EB-4222-FE01-5E5F-E7BD4D73FA5F}"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "hasUnparsedExtras": true
+    }
+  ],
+  "packageReferences": [
+    "/Engine/EngineMaterials/BlendFunc_DefBase",
+    "/Engine/EngineMaterials/BlendFunc_DefBlend",
+    "/Engine/EngineMaterials/DefaultDiffuse",
+    "/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/DebugNumberStrip",
+    "/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/DebugNumberPeriod",
+    "/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/flipbook",
+    "/Engine/MapTemplates/Sky/DaylightAmbientCubemap",
+    "/Game/Blueprints/Field/Ocean/RT_OceanRipple",
+    "/Game/Environment/Common/BP/LightBeam/Textures/T_TilingNoise02_M",
+    "/Game/Environment/Common/MasterShader/Material/M_ENV_mst_water",
+    "/Game/Environment/Common/MasterShader/Material_Instance/Water/MI_ENV_mst_water_sea",
+    "/Game/Environment/Common/MasterShader/Texture/T_ENV_mst_mask_d",
+    "/Game/Environment/Common/MasterShader/Texture/T_ENV_mst_mist_M",
+    "/Game/Environment/Common/MasterShader/Texture/T_ENV_mst_rainripples_01",
+    "/Game/Environment/Common/MasterShader/Texture/T_ENV_mst_rainsplash_a",
+    "/Game/Environment/Common/MasterShader/Texture/T_ENV_mst_seawater_b_N",
+    "/Game/Environment/Common/MasterShader/Texture/T_ENV_mst_watermask_M"
+  ],
+  "shaderMaps": [
+    {
+      "hash": "9d9d042a985982d2672666fa8543b88b473432dc",
+      "library": "pakchunk100-WindowsClient_0_P__ShaderArchive-BLUEPROTOCOL_Chunk100-PCD3D_SM5",
+      "byteOffset": 64558,
+      "method": "exact-20-byte-hash-in-uexp",
+      "shaderCount": 62,
+      "shaders": [
+        {
+          "hash": "090567e8d477c6eba9c5f9c7fbc68b3899d139c1",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/090567e8d477c6eba9c5f9c7fbc68b3899d139c1.hlsl",
+          "assembly": "shaders/assembly/ps/090567e8d477c6eba9c5f9c7fbc68b3899d139c1.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "5d4c192aedb4dab09a8c17976c79fb961cc67834d2b02baf7c9c31c9a59c6905"
+        },
+        {
+          "hash": "0e2ca61345f81c3aad606401965f8de8843d2534",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/0e2ca61345f81c3aad606401965f8de8843d2534.hlsl",
+          "assembly": "shaders/assembly/ps/0e2ca61345f81c3aad606401965f8de8843d2534.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "cc152565b448c860b43cea3a023aed21e6cd839edb19686f9ddfbcc30993987f"
+        },
+        {
+          "hash": "0e2f1ccbe9af31dc8a279cd8704dc9096d1da77d",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/0e2f1ccbe9af31dc8a279cd8704dc9096d1da77d.hlsl",
+          "assembly": "shaders/assembly/ps/0e2f1ccbe9af31dc8a279cd8704dc9096d1da77d.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "08620fbd93f05a73afcd37dec47b5e9f1b502dea55808330455db303ef6a2962"
+        },
+        {
+          "hash": "0faddd87b5deacc80d64ac0abb634132eb804647",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/0faddd87b5deacc80d64ac0abb634132eb804647.hlsl",
+          "assembly": "shaders/assembly/ps/0faddd87b5deacc80d64ac0abb634132eb804647.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "5d625933ed282f57533effbb2440551678851502703709a88d877feea6f592bb"
+        },
+        {
+          "hash": "1334613b3216b7a97ad24b1f68213f1271543fda",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/1334613b3216b7a97ad24b1f68213f1271543fda.hlsl",
+          "assembly": "shaders/assembly/ps/1334613b3216b7a97ad24b1f68213f1271543fda.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "695b5fc15842cecc2b0a609e44b58f79ab3ca06d0d05cce846f1610d09f7c56d"
+        },
+        {
+          "hash": "153f07504ab61c3a7099b272d3bfe143cc7ec16e",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/153f07504ab61c3a7099b272d3bfe143cc7ec16e.hlsl",
+          "assembly": "shaders/assembly/ps/153f07504ab61c3a7099b272d3bfe143cc7ec16e.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "c8dcfc8e0046da6ca5b4822c147300931d9690fa3a2ad58bf06cf35e6b81fded"
+        },
+        {
+          "hash": "1c85bfcc68d2a94d4e570ff0211bc519e4a7353f",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/1c85bfcc68d2a94d4e570ff0211bc519e4a7353f.hlsl",
+          "assembly": "shaders/assembly/ps/1c85bfcc68d2a94d4e570ff0211bc519e4a7353f.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "d9e4df18d13c49fa8b37bde0d5f93b96ab75ac81a058e04386c61bb219e31dcb"
+        },
+        {
+          "hash": "1e5b9aadadb184618901f0806a8230c6b29c9cdb",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/1e5b9aadadb184618901f0806a8230c6b29c9cdb.hlsl",
+          "assembly": "shaders/assembly/ps/1e5b9aadadb184618901f0806a8230c6b29c9cdb.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "f26396ba05587803e55e49ea11f471a05887007ad9a3262be9a946cc632994f4"
+        },
+        {
+          "hash": "1f88a64de13b77f066a8a785c63a93dfbb182d72",
+          "stage": "vs",
+          "hlsl": "shaders/hlsl/vs/1f88a64de13b77f066a8a785c63a93dfbb182d72.hlsl",
+          "assembly": "shaders/assembly/vs/1f88a64de13b77f066a8a785c63a93dfbb182d72.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "1a82275bfb6a67be0e8fb3f0021053adb6ef0060ef6a78f3eddbd859144f36da"
+        },
+        {
+          "hash": "24630422f959450e558eb5816224659dc673ef28",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/24630422f959450e558eb5816224659dc673ef28.hlsl",
+          "assembly": "shaders/assembly/ps/24630422f959450e558eb5816224659dc673ef28.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "e676b6d00b1185f28b42982333df6d75da4233b7f064f6eb67c604ef2de4d78d"
+        },
+        {
+          "hash": "2b76a1655f3e37d90b507dc1e89f8a1c7db1a309",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/2b76a1655f3e37d90b507dc1e89f8a1c7db1a309.hlsl",
+          "assembly": "shaders/assembly/ps/2b76a1655f3e37d90b507dc1e89f8a1c7db1a309.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "78f2d5d163e203dfd1707659f979deb0972768cd98d789725c1913ac860ee3e2"
+        },
+        {
+          "hash": "3020d9871dc69575f6f0c1a079a8c4107528cb37",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/3020d9871dc69575f6f0c1a079a8c4107528cb37.hlsl",
+          "assembly": "shaders/assembly/ps/3020d9871dc69575f6f0c1a079a8c4107528cb37.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "b3fced4abc9b7e55338bf710649b572b677006fb38d3b381e3f3b8e8c6a5ac72"
+        },
+        {
+          "hash": "31a86288445096bc64efb993a9192eb9130d5b9b",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/31a86288445096bc64efb993a9192eb9130d5b9b.hlsl",
+          "assembly": "shaders/assembly/ps/31a86288445096bc64efb993a9192eb9130d5b9b.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "effb1aa5c910605d3635e25be5c26eb7d4160cf420ee02feee5c7e60f62e22d9"
+        },
+        {
+          "hash": "3d90125000a017addb3fd61c0d503d238525ec41",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/3d90125000a017addb3fd61c0d503d238525ec41.hlsl",
+          "assembly": "shaders/assembly/ps/3d90125000a017addb3fd61c0d503d238525ec41.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "55cbc822123fb960e43db5d9fcbf0a457d5885d4d96dabdfb7dddd0f150b06fb"
+        },
+        {
+          "hash": "41578ce94652663cd62bbd5662b810f375f3b8fd",
+          "stage": "vs",
+          "hlsl": "shaders/hlsl/vs/41578ce94652663cd62bbd5662b810f375f3b8fd.hlsl",
+          "assembly": "shaders/assembly/vs/41578ce94652663cd62bbd5662b810f375f3b8fd.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "92bb4bbe6b1f78283852afced868450702813cbcd2bc0500e62115100f00e5c9"
+        },
+        {
+          "hash": "447ae3b87a708a9272b4f42243c9782b66d122a0",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/447ae3b87a708a9272b4f42243c9782b66d122a0.hlsl",
+          "assembly": "shaders/assembly/ps/447ae3b87a708a9272b4f42243c9782b66d122a0.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "fd9c95941ec42567f8bb6d7575c20408067f4ba6be99369dfd6758c003e1a687"
+        },
+        {
+          "hash": "465788007af2eba5c77123c379e33ecdb9573a22",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/465788007af2eba5c77123c379e33ecdb9573a22.hlsl",
+          "assembly": "shaders/assembly/ps/465788007af2eba5c77123c379e33ecdb9573a22.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "b0eb26e63f5edc00a6994dbe3f69fe4ae733ea68900dc6f4a8f70df6fd747c38"
+        },
+        {
+          "hash": "4fbd3d4d5e9ed1ffb7ada5c6b527711943cfe724",
+          "stage": "vs",
+          "hlsl": "shaders/hlsl/vs/4fbd3d4d5e9ed1ffb7ada5c6b527711943cfe724.hlsl",
+          "assembly": "shaders/assembly/vs/4fbd3d4d5e9ed1ffb7ada5c6b527711943cfe724.msasm",
+          "needsManualFix": true,
+          "dxbcSha256": "4f12e89b9bd2a3a6c5cac2b60ba1d5be17f259dd20d263e9a87cf500a3bf1152"
+        },
+        {
+          "hash": "51a23c3b78693cb5c6a05be5edfecd34fdf61a9e",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/51a23c3b78693cb5c6a05be5edfecd34fdf61a9e.hlsl",
+          "assembly": "shaders/assembly/ps/51a23c3b78693cb5c6a05be5edfecd34fdf61a9e.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "e7927fdc61f2a3b8b7d88e7efc1c0342cd81987f12aa30b8b1638a59c5649570"
+        },
+        {
+          "hash": "529dcd447f7dfbea69008592942e2f392e7190ef",
+          "stage": "vs",
+          "hlsl": "shaders/hlsl/vs/529dcd447f7dfbea69008592942e2f392e7190ef.hlsl",
+          "assembly": "shaders/assembly/vs/529dcd447f7dfbea69008592942e2f392e7190ef.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "3b1a5a7d0a992bb94d0a1469ba52aee799be085991d10b4b3056c2748925f085"
+        },
+        {
+          "hash": "55de6849c823f66dabc2cfa3aac6e062c292c0d2",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/55de6849c823f66dabc2cfa3aac6e062c292c0d2.hlsl",
+          "assembly": "shaders/assembly/ps/55de6849c823f66dabc2cfa3aac6e062c292c0d2.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "f0b7ffc02ad31c6b0ec0013552b6dc8d5b1d2f223ff57357facb2f1016c86cdc"
+        },
+        {
+          "hash": "584632caaab0012d019c5fc3457f992e1ee3c1ac",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/584632caaab0012d019c5fc3457f992e1ee3c1ac.hlsl",
+          "assembly": "shaders/assembly/ps/584632caaab0012d019c5fc3457f992e1ee3c1ac.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "c81c946199e373d8376c349150e8b8415bfd080f38dad3f33438251be23a1b61"
+        },
+        {
+          "hash": "59f043656e64143ec87713adaa18dd2b6c99bac7",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/59f043656e64143ec87713adaa18dd2b6c99bac7.hlsl",
+          "assembly": "shaders/assembly/ps/59f043656e64143ec87713adaa18dd2b6c99bac7.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "3ad2a9d78891cc6ee8f1cdfd592128ebb1b571042e12c66dbc1a6f16078c70f7"
+        },
+        {
+          "hash": "5acfe2bc0e36adae7ad6c7b5d382af161e0afa08",
+          "stage": "vs",
+          "hlsl": "shaders/hlsl/vs/5acfe2bc0e36adae7ad6c7b5d382af161e0afa08.hlsl",
+          "assembly": "shaders/assembly/vs/5acfe2bc0e36adae7ad6c7b5d382af161e0afa08.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "a9ebc997c596143d6d010678c3b3f42fc9b4e509efdff0c9fddf446c9a9e1879"
+        },
+        {
+          "hash": "5c1615d78ed7ebd6895da322c879e0366b641992",
+          "stage": "vs",
+          "hlsl": "shaders/hlsl/vs/5c1615d78ed7ebd6895da322c879e0366b641992.hlsl",
+          "assembly": "shaders/assembly/vs/5c1615d78ed7ebd6895da322c879e0366b641992.msasm",
+          "needsManualFix": true,
+          "dxbcSha256": "6fd741946e31cc34c2926f4f99ba07a9d12f51aae806344a22efed2a55199211"
+        },
+        {
+          "hash": "5f021f021add1c6e9e1ab31765f4b7c3ed37dc4c",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/5f021f021add1c6e9e1ab31765f4b7c3ed37dc4c.hlsl",
+          "assembly": "shaders/assembly/ps/5f021f021add1c6e9e1ab31765f4b7c3ed37dc4c.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "df59818f5368d9cb11634042521d221686a8373dfd9dc84005267dedf9e3c247"
+        },
+        {
+          "hash": "6124d8d192e2e51300f4ddb5dcd26b593e7f5556",
+          "stage": "vs",
+          "hlsl": "shaders/hlsl/vs/6124d8d192e2e51300f4ddb5dcd26b593e7f5556.hlsl",
+          "assembly": "shaders/assembly/vs/6124d8d192e2e51300f4ddb5dcd26b593e7f5556.msasm",
+          "needsManualFix": true,
+          "dxbcSha256": "c4cc7232e0a6e1c728891e93174c2e33dbe6eb974a4ae33101d7d0af6fd363fc"
+        },
+        {
+          "hash": "619d66d0eff95b7b0a35d7b351ef822b3dee3759",
+          "stage": "vs",
+          "hlsl": "shaders/hlsl/vs/619d66d0eff95b7b0a35d7b351ef822b3dee3759.hlsl",
+          "assembly": "shaders/assembly/vs/619d66d0eff95b7b0a35d7b351ef822b3dee3759.msasm",
+          "needsManualFix": true,
+          "dxbcSha256": "aeae053c7314829b4c412b88becab4d5651169223b91ab4d5766165588b45b9a"
+        },
+        {
+          "hash": "64e943654a834033bf5d5dacf7ab82122807e6ed",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/64e943654a834033bf5d5dacf7ab82122807e6ed.hlsl",
+          "assembly": "shaders/assembly/ps/64e943654a834033bf5d5dacf7ab82122807e6ed.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "642fa04a61d0b4a33dae3739b4cdfc460dcf2d6adf597d9a8ae9a6acad859d22"
+        },
+        {
+          "hash": "6677941e8ba9cd3150416353801d876ac0981dc1",
+          "stage": "vs",
+          "hlsl": "shaders/hlsl/vs/6677941e8ba9cd3150416353801d876ac0981dc1.hlsl",
+          "assembly": "shaders/assembly/vs/6677941e8ba9cd3150416353801d876ac0981dc1.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "f519e351b2ca5e5326c7e3dac94fb947a2791d8d9bb38a5c6009a5afe926820b"
+        },
+        {
+          "hash": "6ae20168964d9d682158a72eb69d7f2f4e5a60b1",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/6ae20168964d9d682158a72eb69d7f2f4e5a60b1.hlsl",
+          "assembly": "shaders/assembly/ps/6ae20168964d9d682158a72eb69d7f2f4e5a60b1.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "c9d00d43051269d1b7ef7b1ce3921846754b325221ca8ba7b66b3f3577e03a57"
+        },
+        {
+          "hash": "6f8770cf3f3a74744f9d94c9b292ac995e255307",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/6f8770cf3f3a74744f9d94c9b292ac995e255307.hlsl",
+          "assembly": "shaders/assembly/ps/6f8770cf3f3a74744f9d94c9b292ac995e255307.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "d04921b47b516ab36fc13ae7004bb18bd88c3cc1b6a95ea0b63a82a8e36017e1"
+        },
+        {
+          "hash": "77e6ff19fc85543a0e3d6dea94776f0c88dee227",
+          "stage": "vs",
+          "hlsl": "shaders/hlsl/vs/77e6ff19fc85543a0e3d6dea94776f0c88dee227.hlsl",
+          "assembly": "shaders/assembly/vs/77e6ff19fc85543a0e3d6dea94776f0c88dee227.msasm",
+          "needsManualFix": true,
+          "dxbcSha256": "f7773dc0fe3bc876b4336762dafe52acec2eef9bde09030213cb9d15d3c23ee9"
+        },
+        {
+          "hash": "79d2083bb6e0cbe97d0b39d7832a85a82f9df473",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/79d2083bb6e0cbe97d0b39d7832a85a82f9df473.hlsl",
+          "assembly": "shaders/assembly/ps/79d2083bb6e0cbe97d0b39d7832a85a82f9df473.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "0aa47ac09339fb9c7d20b66dc7c7eaf01b4a5df47a0772f1581bb2c183349d11"
+        },
+        {
+          "hash": "8893b3f85053b8df772a7f14791b4b28e382626b",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/8893b3f85053b8df772a7f14791b4b28e382626b.hlsl",
+          "assembly": "shaders/assembly/ps/8893b3f85053b8df772a7f14791b4b28e382626b.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "c3cd526ae2a120f14c96e6d37916ec2571a514c254275ad1d603ccd2a4266710"
+        },
+        {
+          "hash": "89d008a3fae76c2cff5cd4f28825eb41620d7ed1",
+          "stage": "vs",
+          "hlsl": "shaders/hlsl/vs/89d008a3fae76c2cff5cd4f28825eb41620d7ed1.hlsl",
+          "assembly": "shaders/assembly/vs/89d008a3fae76c2cff5cd4f28825eb41620d7ed1.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "86ba36c4140205750af7136542d6f1e7d837516ff0249fd163e818de2013865d"
+        },
+        {
+          "hash": "8e58cc58ad9003f0e4d3af22ca60a45c9e3a21a1",
+          "stage": "vs",
+          "hlsl": "shaders/hlsl/vs/8e58cc58ad9003f0e4d3af22ca60a45c9e3a21a1.hlsl",
+          "assembly": "shaders/assembly/vs/8e58cc58ad9003f0e4d3af22ca60a45c9e3a21a1.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "e96013e26f74205822aa21064a8f6725d145dc2175d75eebcb8bce8af5bffd90"
+        },
+        {
+          "hash": "8f570ac9f46ee690016bb6fba60a0f7d3cc55b32",
+          "stage": "vs",
+          "hlsl": "shaders/hlsl/vs/8f570ac9f46ee690016bb6fba60a0f7d3cc55b32.hlsl",
+          "assembly": "shaders/assembly/vs/8f570ac9f46ee690016bb6fba60a0f7d3cc55b32.msasm",
+          "needsManualFix": true,
+          "dxbcSha256": "609fdb20aebaadf6e9909e2e2c63b02929f99012f3dc9fb07779aad596c003db"
+        },
+        {
+          "hash": "8f607b813f911af45cd610a1e1574529bce4cdb3",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/8f607b813f911af45cd610a1e1574529bce4cdb3.hlsl",
+          "assembly": "shaders/assembly/ps/8f607b813f911af45cd610a1e1574529bce4cdb3.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "9dd5c4beb54643274ed12a02e600688deadc9f9df47f40ab3a5421de9d1681a7"
+        },
+        {
+          "hash": "90c07a2c065d6faa6be1954232782bf437f19382",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/90c07a2c065d6faa6be1954232782bf437f19382.hlsl",
+          "assembly": "shaders/assembly/ps/90c07a2c065d6faa6be1954232782bf437f19382.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "0c8dca931c4a8376b91cfcd60806d2df13fb5ab92c23319e20198d6a9978e76e"
+        },
+        {
+          "hash": "91b9252e7f2a0939cd2b793d25b94186b875ef79",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/91b9252e7f2a0939cd2b793d25b94186b875ef79.hlsl",
+          "assembly": "shaders/assembly/ps/91b9252e7f2a0939cd2b793d25b94186b875ef79.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "cc2f95350b9cba47898f9e6ec67f48f343dfe029f6a5db9ee3ce60c4b2c60f9a"
+        },
+        {
+          "hash": "91f7e277846bfb60e436e3cc164220ee7e66de10",
+          "stage": "vs",
+          "hlsl": "shaders/hlsl/vs/91f7e277846bfb60e436e3cc164220ee7e66de10.hlsl",
+          "assembly": "shaders/assembly/vs/91f7e277846bfb60e436e3cc164220ee7e66de10.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "c96239d671fbe56ea0b1f0218d821c5e17f9c8ff8f471e5b3fb532899885a511"
+        },
+        {
+          "hash": "9901ad7932da7a4b54e722b45b06753caffe2456",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/9901ad7932da7a4b54e722b45b06753caffe2456.hlsl",
+          "assembly": "shaders/assembly/ps/9901ad7932da7a4b54e722b45b06753caffe2456.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "f5b1522b08945fd050305a0a2fe579217d9bbd86234504a0f98e379eeb228e2f"
+        },
+        {
+          "hash": "9c529f36fca0a60d81c14b13ce27a7d716305830",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/9c529f36fca0a60d81c14b13ce27a7d716305830.hlsl",
+          "assembly": "shaders/assembly/ps/9c529f36fca0a60d81c14b13ce27a7d716305830.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "b318c927175e9e81313bc39af3c2cca8dffcaa899f3d0ee3d0a8fda5c949c5b1"
+        },
+        {
+          "hash": "a0f49bc98d30a17cec050ec620bccd0a10db4ca2",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/a0f49bc98d30a17cec050ec620bccd0a10db4ca2.hlsl",
+          "assembly": "shaders/assembly/ps/a0f49bc98d30a17cec050ec620bccd0a10db4ca2.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "ab7c3b18ea5b4ff8754ab5c05a9df1a345c5e732ddc30b6d2b3c68ac51a810dd"
+        },
+        {
+          "hash": "a12c01753816b99d05066fb2c1debbc22065ff40",
+          "stage": "vs",
+          "hlsl": "shaders/hlsl/vs/a12c01753816b99d05066fb2c1debbc22065ff40.hlsl",
+          "assembly": "shaders/assembly/vs/a12c01753816b99d05066fb2c1debbc22065ff40.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "52f53950c01bfcdcfd85e4837e39478e19c50633bf287cc271132037c6a881fc"
+        },
+        {
+          "hash": "af4c42dc6ca9846dc1e80ff09b08fae3cef00aea",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/af4c42dc6ca9846dc1e80ff09b08fae3cef00aea.hlsl",
+          "assembly": "shaders/assembly/ps/af4c42dc6ca9846dc1e80ff09b08fae3cef00aea.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "7a6b57131fa5b5fd540e62500dfa46cc91dbaa49009564ef8bf4f25c17bf43af"
+        },
+        {
+          "hash": "af52d20e81e4c72793e6978653b316921ac0a0db",
+          "stage": "vs",
+          "hlsl": "shaders/hlsl/vs/af52d20e81e4c72793e6978653b316921ac0a0db.hlsl",
+          "assembly": "shaders/assembly/vs/af52d20e81e4c72793e6978653b316921ac0a0db.msasm",
+          "needsManualFix": true,
+          "dxbcSha256": "d84284bfb7d072317b2cbe73733e28f27d88a156d35700b54418e07e95676ef8"
+        },
+        {
+          "hash": "b4199bba17cd9a6e4c5a07f31db1663c9b0354eb",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/b4199bba17cd9a6e4c5a07f31db1663c9b0354eb.hlsl",
+          "assembly": "shaders/assembly/ps/b4199bba17cd9a6e4c5a07f31db1663c9b0354eb.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "7b16d7abfaac9785984298b672d420f6e90e8428c23bbcc9e9517eb7c7c659ec"
+        },
+        {
+          "hash": "bebcae95ff46e13cba91a103e230c613cf4c313c",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/bebcae95ff46e13cba91a103e230c613cf4c313c.hlsl",
+          "assembly": "shaders/assembly/ps/bebcae95ff46e13cba91a103e230c613cf4c313c.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "e1f86efa0ab8aa08c54700293ac1bbd135d7540156e20adc9952c80ec2fe255a"
+        },
+        {
+          "hash": "c781bba1a4aa5355ebf06d16c4e2446b17987fbd",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/c781bba1a4aa5355ebf06d16c4e2446b17987fbd.hlsl",
+          "assembly": "shaders/assembly/ps/c781bba1a4aa5355ebf06d16c4e2446b17987fbd.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "5e6b674da41ae51a711d07e4f0c1fe125fd24ac821d07559a0361b5680a17638"
+        },
+        {
+          "hash": "c91dd020d19e82c5b51840edd2f978263b12c176",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/c91dd020d19e82c5b51840edd2f978263b12c176.hlsl",
+          "assembly": "shaders/assembly/ps/c91dd020d19e82c5b51840edd2f978263b12c176.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "dfde74c400db2810963333143fee9a6b1be58b96270b382bdf216a100d488429"
+        },
+        {
+          "hash": "cad8227cab60e58f1da183d8f11467b8f43f4a64",
+          "stage": "vs",
+          "hlsl": "shaders/hlsl/vs/cad8227cab60e58f1da183d8f11467b8f43f4a64.hlsl",
+          "assembly": "shaders/assembly/vs/cad8227cab60e58f1da183d8f11467b8f43f4a64.msasm",
+          "needsManualFix": true,
+          "dxbcSha256": "7b78ba26dca80cc103f0aba4e1c4ad9ac56e49a30d21dc3955b52944c21cd7d4"
+        },
+        {
+          "hash": "d0e423afaf0e48f3f2bfaeb3b9bda23b7faeff07",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/d0e423afaf0e48f3f2bfaeb3b9bda23b7faeff07.hlsl",
+          "assembly": "shaders/assembly/ps/d0e423afaf0e48f3f2bfaeb3b9bda23b7faeff07.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "904bdc90b00dbcc9561f8f7a378e58627588ce73d986a4da934838c9338b6813"
+        },
+        {
+          "hash": "d1a6c9c6bd1441e2dda764051205a01fd585cd30",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/d1a6c9c6bd1441e2dda764051205a01fd585cd30.hlsl",
+          "assembly": "shaders/assembly/ps/d1a6c9c6bd1441e2dda764051205a01fd585cd30.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "67a97840778317b715fe8b8aede409ef1cdc18620e8b444bd7459282c3f4d0a3"
+        },
+        {
+          "hash": "d1bb6155502616aee4f38ea7231a6a9f942aa142",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/d1bb6155502616aee4f38ea7231a6a9f942aa142.hlsl",
+          "assembly": "shaders/assembly/ps/d1bb6155502616aee4f38ea7231a6a9f942aa142.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "f260cf58a547b65c24e9d54385443b7234ae1c501f8d2aa8611346d6e06f193e"
+        },
+        {
+          "hash": "d37f1ab701b84a50942b30ed71f24701b3b4955f",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/d37f1ab701b84a50942b30ed71f24701b3b4955f.hlsl",
+          "assembly": "shaders/assembly/ps/d37f1ab701b84a50942b30ed71f24701b3b4955f.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "52be85814ff1feebfd357dddc5847f783fc4d1436fc73c2dfc87b6ea7e482e2e"
+        },
+        {
+          "hash": "d4df2f5a5df15a580e6b10fe19f57ad5919fdb11",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/d4df2f5a5df15a580e6b10fe19f57ad5919fdb11.hlsl",
+          "assembly": "shaders/assembly/ps/d4df2f5a5df15a580e6b10fe19f57ad5919fdb11.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "1e1610b996b9ae003dafbab132fc7f57f9ccfc93f73f9ffc69cbe6dcfac82d5d"
+        },
+        {
+          "hash": "d513947229ab171d33dfa02ad3ad9559d45324d5",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/d513947229ab171d33dfa02ad3ad9559d45324d5.hlsl",
+          "assembly": "shaders/assembly/ps/d513947229ab171d33dfa02ad3ad9559d45324d5.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "337b39f48ae6a570c77eaade413ee4d18ded40d0ad83ec93b798b900c55865ee"
+        },
+        {
+          "hash": "e35229c8b1b62b539569544f45df38c927bffffe",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/e35229c8b1b62b539569544f45df38c927bffffe.hlsl",
+          "assembly": "shaders/assembly/ps/e35229c8b1b62b539569544f45df38c927bffffe.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "627c7f5e59ac0f0fbabf182720418bc9bb4e485080821c3185a6257d5f246914"
+        },
+        {
+          "hash": "f0a70f606191e94bae922b767039fff01570c94c",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/f0a70f606191e94bae922b767039fff01570c94c.hlsl",
+          "assembly": "shaders/assembly/ps/f0a70f606191e94bae922b767039fff01570c94c.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "46a736005cdd96df554afd34064c99e54b142fb60c5bbc45229bfe4bbfbe4fa2"
+        },
+        {
+          "hash": "ffbbd52478fb11db87b272a924e8fa42f04d0a86",
+          "stage": "vs",
+          "hlsl": "shaders/hlsl/vs/ffbbd52478fb11db87b272a924e8fa42f04d0a86.hlsl",
+          "assembly": "shaders/assembly/vs/ffbbd52478fb11db87b272a924e8fa42f04d0a86.msasm",
+          "needsManualFix": true,
+          "dxbcSha256": "e26efddf93cda7ff787928e138bf3ca39bb0a5c6c36bea6fae49623526f101e0"
+        }
+      ]
+    }
+  ]
+}

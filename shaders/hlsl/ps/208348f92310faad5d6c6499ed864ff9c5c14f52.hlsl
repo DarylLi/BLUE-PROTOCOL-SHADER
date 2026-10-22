@@ -1,0 +1,21 @@
+// Decompiled with 3Dmigoto 1.3.16. Reconstructed HLSL; not original source.
+Texture2D<float4> t0 : register(t0);
+
+SamplerState s0_s : register(s0);
+
+
+
+
+// 3Dmigoto declarations
+#define cmp -
+
+
+void main(
+  float2 v0 : TEXCOORD0,
+  float4 v1 : SV_POSITION0,
+  uint v2 : TEXCOORD1,
+  out float4 o0 : SV_Target0)
+{
+  o0.xyzw = t0.Sample(s0_s, v0.xy).xyzw;
+  return;
+}

@@ -1,0 +1,655 @@
+// Decompiled with 3Dmigoto 1.3.16. Reconstructed HLSL; not original source.
+Texture2D<float4> t9 : register(t9);
+
+Texture2D<float4> t8 : register(t8);
+
+Texture2D<float4> t7 : register(t7);
+
+Texture2D<float4> t6 : register(t6);
+
+Texture2D<float4> t5 : register(t5);
+
+Texture2D<float4> t4 : register(t4);
+
+Texture2D<float4> t3 : register(t3);
+
+struct t2_t {
+  float val[4];
+};
+StructuredBuffer<t2_t> t2 : register(t2);
+
+Texture3D<float4> t1 : register(t1);
+
+Texture3D<uint4> t0 : register(t0);
+
+SamplerState s4_s : register(s4);
+
+SamplerState s3_s : register(s3);
+
+SamplerState s2_s : register(s2);
+
+SamplerState s1_s : register(s1);
+
+SamplerState s0_s : register(s0);
+
+cbuffer cb3 : register(b3)
+{
+  float4 cb3[19];
+}
+
+cbuffer cb2 : register(b2)
+{
+  float4 cb2[10];
+}
+
+cbuffer cb1 : register(b1)
+{
+  float4 cb1[3];
+}
+
+cbuffer cb0 : register(b0)
+{
+  float4 cb0[215];
+}
+
+
+
+
+// 3Dmigoto declarations
+#define cmp -
+
+
+void main(
+  linear centroid float4 v0 : TEXCOORD10,
+  linear centroid float4 v1 : TEXCOORD11,
+  float4 v2 : COLOR0,
+  nointerpolation uint v3 : PRIMITIVE_ID0,
+  float3 v4 : TEXCOORD9,
+  float4 v5 : SV_Position0,
+  uint v6 : SV_IsFrontFace0,
+  out float4 o0 : SV_Target0,
+  out float4 o1 : SV_Target1,
+  out float4 o2 : SV_Target2,
+  out float4 o3 : SV_Target3,
+  out float4 o4 : SV_Target4,
+  out float4 o5 : SV_Target5,
+  out float4 o6 : SV_Target6,
+  out float oDepthLE : SV_DepthLessEqual)
+{
+  const float4 icb[] = { { 1.000000, 0, 0, 0},
+                              { 0, 1.000000, 0, 0},
+                              { 0, 0, 1.000000, 0},
+                              { 0, 0, 0, 1.000000} };
+  float4 r0,r1,r2,r3,r4,r5,r6,r7,r8,r9,r10,r11,r12,r13,r14,r15,r16,r17,r18,r19,r20;
+  uint4 bitmask, uiDest;
+  float4 fDest;
+
+  r0.xyz = v1.zxy * v0.yzx;
+  r0.xyz = v1.yzx * v0.zxy + -r0.xyz;
+  r0.xyz = v1.www * r0.xyz;
+  r1.x = v5.z;
+  r1.y = 1;
+  r1.xy = v5.ww * r1.xy;
+  r2.xyzw = cb0[45].xyzw * v5.yyyy;
+  r2.xyzw = v5.xxxx * cb0[44].xyzw + r2.xyzw;
+  r2.xyzw = v5.zzzz * cb0[46].xyzw + r2.xyzw;
+  r2.xyzw = cb0[47].xyzw + r2.xyzw;
+  r2.xyz = r2.xyz / r2.www;
+  r3.xyz = -cb0[70].xyz + r2.xyz;
+  r4.xyz = -cb0[70].xyz + v4.xyz;
+  r0.w = dot(-r2.xyz, -r2.xyz);
+  r0.w = rsqrt(r0.w);
+  r2.xyz = -r2.xyz * r0.www;
+  r5.xyz = r4.xyz / cb3[10].zzz;
+  r1.zw = t3.SampleBias(s2_s, r5.xz, cb0[143].y).xy;
+  r1.zw = r1.zw * float2(2,2) + float2(-1,-1);
+  r0.w = dot(r1.zw, r1.zw);
+  r0.w = 1 + -r0.w;
+  r0.w = max(0, r0.w);
+  r0.w = sqrt(r0.w);
+  r6.y = v1.y * r0.w;
+  r6.xz = -r1.zw;
+  r1.zw = t3.SampleBias(s2_s, r5.yz, cb0[143].y).xy;
+  r1.zw = r1.zw * float2(2,2) + float2(-1,-1);
+  r0.w = dot(r1.zw, r1.zw);
+  r0.w = 1 + -r0.w;
+  r0.w = max(0, r0.w);
+  r0.w = sqrt(r0.w);
+  r7.x = v1.x * r0.w;
+  r7.yz = -r1.zw;
+  r1.zw = min(float2(1,1), abs(v1.xz));
+  r7.xyz = r7.xyz + -r6.xyz;
+  r6.xyz = r1.zzz * r7.xyz + r6.xyz;
+  r7.xy = t3.SampleBias(s2_s, r5.xy, cb0[143].y).xy;
+  r7.xy = r7.xy * float2(2,2) + float2(-1,-1);
+  r0.w = dot(r7.xy, r7.xy);
+  r0.w = 1 + -r0.w;
+  r0.w = max(0, r0.w);
+  r0.w = sqrt(r0.w);
+  r7.xy = -r7.xy;
+  r7.z = v1.z * r0.w;
+  r7.xyz = r7.xyz + -r6.xyz;
+  r6.xyz = r1.www * r7.xyz + r6.xyz;
+  r0.w = dot(r6.xyz, r6.xyz);
+  r0.w = sqrt(r0.w);
+  r6.xyz = r6.xyz / r0.www;
+  r7.x = dot(v0.xyz, r6.xyz);
+  r7.y = dot(r0.xyz, r6.xyz);
+  r7.z = dot(v1.xyz, r6.xyz);
+  r6.xyz = r4.xyz / cb3[11].yyy;
+  r8.xy = t3.SampleBias(s2_s, r6.xz, cb0[143].y).xy;
+  r8.xy = r8.xy * float2(2,2) + float2(-1,-1);
+  r0.w = dot(r8.xy, r8.xy);
+  r0.w = 1 + -r0.w;
+  r0.w = max(0, r0.w);
+  r0.w = sqrt(r0.w);
+  r9.y = v1.y * r0.w;
+  r9.xz = -r8.xy;
+  r8.xy = t3.SampleBias(s2_s, r6.yz, cb0[143].y).xy;
+  r8.xy = r8.xy * float2(2,2) + float2(-1,-1);
+  r0.w = dot(r8.xy, r8.xy);
+  r0.w = 1 + -r0.w;
+  r0.w = max(0, r0.w);
+  r0.w = sqrt(r0.w);
+  r10.x = v1.x * r0.w;
+  r10.yz = -r8.xy;
+  r8.xyz = r10.xyz + -r9.xyz;
+  r8.xyz = r1.zzz * r8.xyz + r9.xyz;
+  r9.xy = t3.SampleBias(s2_s, r6.xy, cb0[143].y).xy;
+  r9.xy = r9.xy * float2(2,2) + float2(-1,-1);
+  r0.w = dot(r9.xy, r9.xy);
+  r0.w = 1 + -r0.w;
+  r0.w = max(0, r0.w);
+  r0.w = sqrt(r0.w);
+  r9.xy = -r9.xy;
+  r9.z = v1.z * r0.w;
+  r9.xyz = r9.xyz + -r8.xyz;
+  r8.xyz = r1.www * r9.xyz + r8.xyz;
+  r0.w = dot(r8.xyz, r8.xyz);
+  r0.w = sqrt(r0.w);
+  r8.xyz = r8.xyz / r0.www;
+  r9.x = dot(v0.xyz, r8.xyz);
+  r9.y = dot(r0.xyz, r8.xyz);
+  r9.z = dot(v1.xyz, r8.xyz);
+  r8.xyz = -cb0[67].xyz + r3.xyz;
+  r0.w = dot(r8.xyz, r8.xyz);
+  r0.w = sqrt(r0.w);
+  r2.w = r0.w / cb3[11].z;
+  r3.w = cmp(0 >= r2.w);
+  r2.w = log2(r2.w);
+  r2.w = cb3[11].w * r2.w;
+  r2.w = exp2(r2.w);
+  r2.w = min(1, r2.w);
+  r2.w = r3.w ? 0 : r2.w;
+  r8.xyz = r9.xyz + -r7.xyz;
+  r7.xyz = r2.www * r8.xyz + r7.xyz;
+  r8.xyz = float3(0,0,1) + -r7.xyz;
+  r7.xyz = cb3[12].xxx * r8.xyz + r7.xyz;
+  r8.xyz = r4.xyz / cb3[12].www;
+  r9.xy = t4.SampleBias(s3_s, r8.xz, cb0[143].y).xy;
+  r9.xy = r9.xy * float2(2,2) + float2(-1,-1);
+  r3.w = dot(r9.xy, r9.xy);
+  r3.w = 1 + -r3.w;
+  r3.w = max(0, r3.w);
+  r3.w = sqrt(r3.w);
+  r10.y = v1.y * r3.w;
+  r10.xz = -r9.xy;
+  r9.xy = t4.SampleBias(s3_s, r8.yz, cb0[143].y).xy;
+  r9.xy = r9.xy * float2(2,2) + float2(-1,-1);
+  r3.w = dot(r9.xy, r9.xy);
+  r3.w = 1 + -r3.w;
+  r3.w = max(0, r3.w);
+  r3.w = sqrt(r3.w);
+  r11.x = v1.x * r3.w;
+  r11.yz = -r9.xy;
+  r9.xyz = r11.xyz + -r10.xyz;
+  r9.xyz = r1.zzz * r9.xyz + r10.xyz;
+  r10.xy = t4.SampleBias(s3_s, r8.xy, cb0[143].y).xy;
+  r10.xy = r10.xy * float2(2,2) + float2(-1,-1);
+  r3.w = dot(r10.xy, r10.xy);
+  r3.w = 1 + -r3.w;
+  r3.w = max(0, r3.w);
+  r3.w = sqrt(r3.w);
+  r10.xy = -r10.xy;
+  r10.z = v1.z * r3.w;
+  r10.xyz = r10.xyz + -r9.xyz;
+  r9.xyz = r1.www * r10.xyz + r9.xyz;
+  r3.w = dot(r9.xyz, r9.xyz);
+  r3.w = sqrt(r3.w);
+  r9.xyz = r9.xyz / r3.www;
+  r10.x = dot(v0.xyz, r9.xyz);
+  r10.y = dot(r0.xyz, r9.xyz);
+  r10.z = dot(v1.xyz, r9.xyz);
+  r4.xyz = r4.xyz / cb3[13].zzz;
+  r9.xy = t4.SampleBias(s3_s, r4.xz, cb0[143].y).xy;
+  r9.xy = r9.xy * float2(2,2) + float2(-1,-1);
+  r3.w = dot(r9.xy, r9.xy);
+  r3.w = 1 + -r3.w;
+  r3.w = max(0, r3.w);
+  r3.w = sqrt(r3.w);
+  r11.y = v1.y * r3.w;
+  r11.xz = -r9.xy;
+  r9.xy = t4.SampleBias(s3_s, r4.yz, cb0[143].y).xy;
+  r9.xy = r9.xy * float2(2,2) + float2(-1,-1);
+  r3.w = dot(r9.xy, r9.xy);
+  r3.w = 1 + -r3.w;
+  r3.w = max(0, r3.w);
+  r3.w = sqrt(r3.w);
+  r12.x = v1.x * r3.w;
+  r12.yz = -r9.xy;
+  r9.xyz = r12.xyz + -r11.xyz;
+  r9.xyz = r1.zzz * r9.xyz + r11.xyz;
+  r11.xy = t4.SampleBias(s3_s, r4.xy, cb0[143].y).xy;
+  r11.xy = r11.xy * float2(2,2) + float2(-1,-1);
+  r1.z = dot(r11.xy, r11.xy);
+  r1.z = 1 + -r1.z;
+  r1.z = max(0, r1.z);
+  r1.z = sqrt(r1.z);
+  r11.xy = -r11.xy;
+  r11.z = v1.z * r1.z;
+  r11.xyz = r11.xyz + -r9.xyz;
+  r9.xyz = r1.www * r11.xyz + r9.xyz;
+  r1.z = dot(r9.xyz, r9.xyz);
+  r1.z = sqrt(r1.z);
+  r9.xyz = r9.xyz / r1.zzz;
+  r11.x = dot(v0.xyz, r9.xyz);
+  r11.y = dot(r0.xyz, r9.xyz);
+  r11.z = dot(v1.xyz, r9.xyz);
+  r0.w = r0.w / cb3[13].w;
+  r1.z = cmp(0 >= r0.w);
+  r0.w = log2(r0.w);
+  r0.w = cb3[14].x * r0.w;
+  r0.w = exp2(r0.w);
+  r0.w = min(1, r0.w);
+  r0.w = r1.z ? 0 : r0.w;
+  r9.xyz = r11.xyz + -r10.xyz;
+  r9.xyz = r0.www * r9.xyz + r10.xyz;
+  r10.xyz = float3(0,0,1) + -r9.xyz;
+  r9.xyz = cb3[14].yyy * r10.xyz + r9.xyz;
+  r1.z = v1.z * 0.5 + 0.5;
+  r1.z = saturate(r1.z * cb3[14].z + cb3[15].y);
+  r9.xyz = r9.xyz + -r7.xyz;
+  r7.xyz = r1.zzz * r9.xyz + r7.xyz;
+  r9.xyz = r7.xyz * cb0[138].www + cb0[138].xyz;
+  r1.z = dot(r9.xyz, r9.xyz);
+  r1.z = rsqrt(r1.z);
+  r9.xyz = r9.xyz * r1.zzz;
+  r10.xyz = r9.yyy * r0.xyz;
+  r9.xyw = r9.xxx * v0.xyz + r10.xyz;
+  r9.xyz = r9.zzz * v1.xyz + r9.xyw;
+  r1.z = dot(r9.xyz, r9.xyz);
+  r1.z = rsqrt(r1.z);
+  r9.xyw = r9.xyz * r1.zzz;
+  r1.w = dot(-cb2[5].xyz, -cb2[5].xyz);
+  r1.w = sqrt(r1.w);
+  r10.xyz = -cb2[5].xyz / r1.www;
+  r1.w = dot(r10.xyz, r9.xyw);
+  r1.w = 1 + r1.w;
+  r11.xyz = cb0[67].xyz + -r3.xyz;
+  r3.w = dot(r11.xyz, r11.xyz);
+  r3.w = sqrt(r3.w);
+  r11.xyz = r11.xyz / r3.www;
+  r3.w = saturate(dot(-r11.xyz, r10.xyz));
+  r4.w = 1 + -cb1[1].x;
+  r3.w = saturate(r4.w + r3.w);
+  r1.w = r3.w * r1.w;
+  r3.w = dot(r9.xyw, r2.xyz);
+  r3.w = max(0, r3.w);
+  r3.w = 1 + -r3.w;
+  r3.w = max(9.99999975e-005, abs(r3.w));
+  r3.w = log2(r3.w);
+  r5.w = cb1[1].y * r3.w;
+  r5.w = exp2(r5.w);
+  r6.w = 1 + -cb1[0].w;
+  r5.w = r5.w * r6.w + cb1[0].w;
+  r6.w = cmp(r5.w >= cb1[0].y);
+  r6.w = r6.w ? 1.000000 : 0;
+  r5.w = r6.w * r5.w;
+  r6.w = r9.z * r1.z + 1;
+  r7.w = cmp(0 >= r6.w);
+  r6.w = log2(r6.w);
+  r6.w = cb1[0].x * r6.w;
+  r6.w = exp2(r6.w);
+  r6.w = min(1, r6.w);
+  r6.w = r7.w ? 0 : r6.w;
+  r5.w = r6.w * r5.w;
+  r1.z = -r9.z * r1.z + 1;
+  r6.w = cmp(0 >= r1.z);
+  r1.z = log2(r1.z);
+  r1.z = cb1[1].z * r1.z;
+  r1.z = exp2(r1.z);
+  r1.z = min(1, r1.z);
+  r1.z = r6.w ? 0 : r1.z;
+  r1.z = r5.w * r1.z;
+  r1.z = cb1[0].z * r1.z;
+  r1.w = r1.w * r1.z;
+  r10.xyz = cb2[4].xyz * r1.www;
+  r1.w = dot(-cb2[8].xyz, -cb2[8].xyz);
+  r1.w = sqrt(r1.w);
+  r12.xyz = -cb2[8].xyz / r1.www;
+  r1.w = dot(r12.xyz, r9.xyw);
+  r1.w = 1 + r1.w;
+  r5.w = saturate(dot(-r11.xyz, r12.xyz));
+  r4.w = saturate(r5.w + r4.w);
+  r1.w = r4.w * r1.w;
+  r1.z = r1.w * r1.z;
+  r11.xyz = cb2[9].xyz * r1.zzz;
+  r11.xyz = cb2[1].yyy * r11.xyz;
+  r10.xyz = r10.xyz * cb2[1].xxx + r11.xyz;
+  r10.xyz = cb1[2].xyz * r10.xyz;
+  r11.xyz = cb3[2].xyz * r10.xyz;
+  r7.xyz = float3(0,0,1) + r7.xyz;
+  r0.xyz = r7.yyy * r0.xyz;
+  r0.xyz = r7.xxx * v0.xyz + r0.xyz;
+  r0.xyz = r7.zzz * v1.xyz + r0.xyz;
+  r0.x = dot(r0.xyz, r0.xyz);
+  r0.x = sqrt(r0.x);
+  r0.x = r0.z / r0.x;
+  r0.x = r0.x * 0.5 + 0.5;
+  r0.x = saturate(r0.x * cb3[14].z + cb3[15].y);
+  r0.x = r0.x + r0.x;
+  r0.x = min(1, r0.x);
+  r7.xyz = -r10.xyz * cb3[2].xyz + cb3[3].xyz;
+  r7.xyz = cb3[15].zzz * r7.xyz + r11.xyz;
+  r10.xyz = r3.xyz / cb3[10].zzz;
+  r11.xyzw = cmp(abs(r9.ywwx) < abs(r9.xxyy));
+  r0.y = r11.y ? r11.x : 0;
+  r11.xyz = r11.zzz ? float3(1,2,0) : float3(2,0,1);
+  r11.xyz = r0.yyy ? float3(0,1.40129846e-045,2.80259693e-045) : r11.xyz;
+  r0.yz = cmp(abs(r9.xy) < abs(r9.ww));
+  r0.y = r0.y ? r11.w : 0;
+  r12.xyz = r0.zzz ? float3(2,1,3) : float3(1,3,2);
+  r12.xyz = r0.yyy ? float3(3,2,1) : r12.xyz;
+  r12.xyz = (int3)-r11.xyz + (int3)r12.xyz;
+  r12.xyz = max(int3(0,0,0), (int3)r12.xyz);
+  r12.xyz = min(int3(2,2,2), (int3)r12.xyz);
+  r13.x = dot(abs(r9.xyw), icb[r11.x+0].xyz);
+  r13.y = dot(abs(r9.xyw), icb[r12.x+0].xyz);
+  r0.yz = float2(-0.577300012,-0.577300012) + r13.xy;
+  r0.yz = saturate(float2(2.36574411,2.36574411) * r0.yz);
+  r1.z = cmp((int)r11.z < (int)r11.y);
+  r1.zw = r1.zz ? r11.zy : r11.yz;
+  r4.w = cmp((int)r12.z < (int)r12.y);
+  r11.xy = r4.ww ? r12.zy : r12.yz;
+  r12.xyz = ddx_coarse(r10.xyz);
+  r13.xyz = ddy_coarse(r10.xyz);
+  r14.x = dot(r10.xyz, icb[r1.z+0].xyz);
+  r14.y = dot(r10.xyz, icb[r1.w+0].xyz);
+  r15.x = dot(r12.xyz, icb[r1.z+0].xyz);
+  r15.y = dot(r12.xyz, icb[r1.w+0].xyz);
+  r16.x = dot(r13.xyz, icb[r1.z+0].xyz);
+  r16.y = dot(r13.xyz, icb[r1.w+0].xyz);
+  r14.xyz = t5.SampleGrad(s0_s, r14.xy, r15.xyx, r16.xyx).xyz;
+  r15.x = dot(r10.xyz, icb[r11.x+0].xyz);
+  r15.y = dot(r10.xyz, icb[r11.y+0].xyz);
+  r10.x = dot(r12.xyz, icb[r11.x+0].xyz);
+  r10.y = dot(r12.xyz, icb[r11.y+0].xyz);
+  r12.x = dot(r13.xyz, icb[r11.x+0].xyz);
+  r12.y = dot(r13.xyz, icb[r11.y+0].xyz);
+  r10.xyz = t5.SampleGrad(s0_s, r15.xy, r10.xyx, r12.xyx).xyz;
+  r10.xyz = r10.xyz * r0.zzz;
+  r10.xyz = r14.xyz * r0.yyy + r10.xyz;
+  r4.w = r0.y + r0.z;
+  r10.xyz = r10.xyz / r4.www;
+  r5.w = dot(r3.xy, float2(17,0.100000001));
+  r5.w = sin(r5.w);
+  r5.w = 10000 * r5.w;
+  r6.w = 0.100000001 * r3.z;
+  r7.w = r3.y * 13 + r3.x;
+  r7.w = sin(r7.w);
+  r7.w = 0.100000001 + abs(r7.w);
+  r5.w = r7.w * r5.w;
+  r5.w = frac(r5.w);
+  r6.w = r5.w * 17 + r6.w;
+  r6.w = sin(r6.w);
+  r6.w = 10000 * r6.w;
+  r5.w = r3.z * 13 + r5.w;
+  r5.w = sin(r5.w);
+  r5.w = 0.100000001 + abs(r5.w);
+  r5.w = r6.w * r5.w;
+  r5.w = frac(r5.w);
+  r12.xyzw = cmp(abs(v1.yzzx) < abs(v1.xxyy));
+  r6.w = r12.y ? r12.x : 0;
+  r12.xyz = r12.zzz ? float3(1,2,0) : float3(2,0,1);
+  r12.xyz = r6.www ? float3(0,1.40129846e-045,2.80259693e-045) : r12.xyz;
+  r11.zw = cmp(abs(v1.xy) < abs(v1.zz));
+  r6.w = r11.z ? r12.w : 0;
+  r11.zw = r11.ww ? float2(4.20389539e-045,1.40129846e-045) : float2(2.80259693e-045,4.20389539e-045);
+  r11.zw = r6.ww ? float2(1.40129846e-045,2.80259693e-045) : r11.zw;
+  r11.zw = (int2)-r12.zy + (int2)r11.zw;
+  r11.zw = max(int2(0,0), (int2)r11.zw);
+  r11.zw = min(int2(0,0), (int2)r11.zw);
+  r6.w = dot(abs(v1.xyz), icb[r12.x+0].xyz);
+  r6.w = -0.577300012 + r6.w;
+  r6.w = saturate(2.36574411 * r6.w);
+  r7.w = cmp((int)r12.z < (int)r12.y);
+  r12.xy = r7.ww ? r12.zy : r12.yz;
+  r7.w = cmp((int)r11.z < (int)r11.w);
+  r11.zw = r7.ww ? r11.zw : r11.wz;
+  r5.w = cmp(r5.w < r6.w);
+  r11.zw = r5.ww ? r12.xy : r11.zw;
+  r12.xyz = ddx_coarse(r6.xyz);
+  r13.xyz = ddy_coarse(r6.xyz);
+  r14.x = dot(r6.xyz, icb[r11.z+0].xyz);
+  r14.y = dot(r6.xyz, icb[r11.w+0].xyz);
+  r6.x = dot(r12.xyz, icb[r11.z+0].xyz);
+  r6.y = dot(r12.xyz, icb[r11.w+0].xyz);
+  r12.x = dot(r13.xyz, icb[r11.z+0].xyz);
+  r12.y = dot(r13.xyz, icb[r11.w+0].xyz);
+  r13.xyz = t5.SampleGrad(s0_s, r14.xy, r6.xyx, r12.xyx).xyz;
+  r13.xyz = r13.xyz + -r10.xyz;
+  r10.xyz = r2.www * r13.xyz + r10.xyz;
+  r10.xyz = cb3[5].xyz * r10.xyz;
+  r13.xyz = r3.xyz / cb3[12].www;
+  r15.xyz = ddx_coarse(r13.xyz);
+  r16.xyz = ddy_coarse(r13.xyz);
+  r17.x = dot(r13.xyz, icb[r1.z+0].xyz);
+  r17.y = dot(r13.xyz, icb[r1.w+0].xyz);
+  r18.x = dot(r15.xyz, icb[r1.z+0].xyz);
+  r18.y = dot(r15.xyz, icb[r1.w+0].xyz);
+  r19.x = dot(r16.xyz, icb[r1.z+0].xyz);
+  r19.y = dot(r16.xyz, icb[r1.w+0].xyz);
+  r17.xyz = t6.SampleGrad(s0_s, r17.xy, r18.xyx, r19.xyx).xyz;
+  r18.x = dot(r13.xyz, icb[r11.x+0].xyz);
+  r18.y = dot(r13.xyz, icb[r11.y+0].xyz);
+  r13.x = dot(r15.xyz, icb[r11.x+0].xyz);
+  r13.y = dot(r15.xyz, icb[r11.y+0].xyz);
+  r15.x = dot(r16.xyz, icb[r11.x+0].xyz);
+  r15.y = dot(r16.xyz, icb[r11.y+0].xyz);
+  r13.xyz = t6.SampleGrad(s0_s, r18.xy, r13.xyx, r15.xyx).xyz;
+  r13.xyz = r13.xyz * r0.zzz;
+  r13.xyz = r17.xyz * r0.yyy + r13.xyz;
+  r13.xyz = r13.xyz / r4.www;
+  r15.xyz = ddx_coarse(r4.xyz);
+  r16.xyz = ddy_coarse(r4.xyz);
+  r17.x = dot(r4.xyz, icb[r11.z+0].xyz);
+  r17.y = dot(r4.xyz, icb[r11.w+0].xyz);
+  r4.x = dot(r15.xyz, icb[r11.z+0].xyz);
+  r4.y = dot(r15.xyz, icb[r11.w+0].xyz);
+  r15.x = dot(r16.xyz, icb[r11.z+0].xyz);
+  r15.y = dot(r16.xyz, icb[r11.w+0].xyz);
+  r16.xyz = t6.SampleGrad(s0_s, r17.xy, r4.xyx, r15.xyx).xyz;
+  r16.xyz = r16.xyz + -r13.xyz;
+  r13.xyz = r0.www * r16.xyz + r13.xyz;
+  r13.xyz = r13.xyz * cb3[7].xyz + -r10.xyz;
+  r10.xyz = r0.xxx * r13.xyz + r10.xyz;
+  r4.z = saturate(v2.x + v2.x);
+  r13.xyz = cb3[9].xyz * r10.xyz + -r10.xyz;
+  r10.xyz = r4.zzz * r13.xyz + r10.xyz;
+  r10.xyz = max(float3(0.00999999978,0.00999999978,0.00999999978), r10.xyz);
+  r13.xyz = ddx_coarse(r5.xyz);
+  r16.xyz = ddy_coarse(r5.xyz);
+  r18.x = dot(r5.xyz, icb[r1.z+0].xyz);
+  r18.y = dot(r5.xyz, icb[r1.w+0].xyz);
+  r19.x = dot(r13.xyz, icb[r1.z+0].xyz);
+  r19.y = dot(r13.xyz, icb[r1.w+0].xyz);
+  r20.x = dot(r16.xyz, icb[r1.z+0].xyz);
+  r20.y = dot(r16.xyz, icb[r1.w+0].xyz);
+  r6.zw = t7.SampleGrad(s0_s, r18.xy, r19.xx, r20.xx).xy;
+  r18.x = dot(r5.xyz, icb[r11.x+0].xyz);
+  r18.y = dot(r5.xyz, icb[r11.y+0].xyz);
+  r5.x = dot(r13.xyz, icb[r11.x+0].xyz);
+  r5.y = dot(r13.xyz, icb[r11.y+0].xyz);
+  r13.x = dot(r16.xyz, icb[r11.x+0].xyz);
+  r13.y = dot(r16.xyz, icb[r11.y+0].xyz);
+  r5.xy = t7.SampleGrad(s0_s, r18.xy, r5.xy, r13.xy).xy;
+  r5.xy = r5.xy * r0.zz;
+  r5.xy = r6.zw * r0.yy + r5.xy;
+  r5.xy = r5.xy / r4.ww;
+  r5.zw = t7.SampleGrad(s0_s, r14.xy, r6.xx, r12.xx).xy;
+  r5.zw = r5.zw + -r5.xy;
+  r5.xy = r2.ww * r5.zw + r5.xy;
+  r6.xyz = ddx_coarse(r8.xyz);
+  r12.xyz = ddy_coarse(r8.xyz);
+  r13.x = dot(r8.xyz, icb[r1.z+0].xyz);
+  r13.y = dot(r8.xyz, icb[r1.w+0].xyz);
+  r14.x = dot(r6.xyz, icb[r1.z+0].xyz);
+  r14.y = dot(r6.xyz, icb[r1.w+0].xyz);
+  r16.x = dot(r12.xyz, icb[r1.z+0].xyz);
+  r16.y = dot(r12.xyz, icb[r1.w+0].xyz);
+  r1.zw = t8.SampleGrad(s0_s, r13.xy, r14.xx, r16.xx).xy;
+  r13.x = dot(r8.xyz, icb[r11.x+0].xyz);
+  r13.y = dot(r8.xyz, icb[r11.y+0].xyz);
+  r8.x = dot(r6.xyz, icb[r11.x+0].xyz);
+  r8.y = dot(r6.xyz, icb[r11.y+0].xyz);
+  r6.x = dot(r12.xyz, icb[r11.x+0].xyz);
+  r6.y = dot(r12.xyz, icb[r11.y+0].xyz);
+  r5.zw = t8.SampleGrad(s0_s, r13.xy, r8.xx, r6.xx).xy;
+  r5.zw = r5.zw * r0.zz;
+  r0.yz = r1.zw * r0.yy + r5.zw;
+  r0.yz = r0.yz / r4.ww;
+  r1.zw = t8.SampleGrad(s0_s, r17.xy, r4.xx, r15.xx).xy;
+  r1.zw = r1.zw + -r0.yz;
+  r0.yz = r0.ww * r1.zw + r0.yz;
+  r0.z = r0.z + -r5.y;
+  r4.x = saturate(r0.x * r0.z + r5.y);
+  r0.z = cb3[15].w * r3.w;
+  r0.z = exp2(r0.z);
+  r0.z = r0.z * 0.959999979 + 0.0399999991;
+  r0.z = cb3[16].x * r0.z;
+  r0.w = saturate(cb3[16].z + v1.z);
+  r0.z = r0.w * r0.z;
+  r0.z = max(0, r0.z);
+  r0.z = min(0.5, r0.z);
+  r4.y = saturate(cb3[16].w * r0.z);
+  r0.z = cb3[17].x + r5.x;
+  r0.y = cb3[17].y + r0.y;
+  r0.y = r0.y + -r0.z;
+  r0.x = r0.x * r0.y + r0.z;
+  r0.x = saturate(-v2.x + r0.x);
+  r0.yz = -cb0[129].xy + v5.xy;
+  r1.zw = cb0[152].xx + r0.yz;
+  r1.zw = (uint2)r1.zw;
+  r0.w = (uint)r1.w << 1;
+  r0.w = (int)r0.w + (int)r1.z;
+  r0.w = (uint)r0.w % 5;
+  r0.w = (uint)r0.w;
+  r0.yz = float2(0.015625,0.015625) * r0.yz;
+  r0.y = t9.SampleBias(s4_s, r0.yz, cb0[143].y).x;
+  r0.y = r0.w + r0.y;
+  r0.y = cb3[17].z * r0.y;
+  r0.y = 0.166666672 * r0.y;
+  r0.z = cmp(cb0[31].w < 1);
+  r0.w = r1.x * cb0[65].x + cb0[65].y;
+  r1.z = r1.x * cb0[65].z + -cb0[65].w;
+  r1.z = 1 / r1.z;
+  r0.w = r1.z + r0.w;
+  r0.z = r0.z ? r1.y : r0.w;
+  r0.z = r0.z / cb3[17].w;
+  r0.w = cmp(0 >= r0.z);
+  r0.z = log2(r0.z);
+  r0.z = cb3[18].x * r0.z;
+  r0.z = exp2(r0.z);
+  r0.z = min(1, r0.z);
+  r0.z = cb3[18].y * r0.z;
+  r0.z = max(1, r0.z);
+  r0.z = r0.w ? 1 : r0.z;
+  r0.y = r0.y * r0.z + r1.y;
+  r0.y = r1.x / r0.y;
+  r0.y = min(v5.z, r0.y);
+  r0.z = -r0.y * r1.y + r1.x;
+  r0.z = r0.z / r0.y;
+  r1.xyz = r2.xyz * r0.zzz + r3.xyz;
+  r2.xyz = min(float3(1,1,1), r10.xyz);
+  o2.z = r0.x * cb0[139].y + cb0[139].x;
+  r0.x = mad((int)v3.x, 36, 20);
+  r0.x = t2[r0.x].val[4/4];
+  r0.z = t2[r0.x].val[4/4+1];
+  r0.z = cmp(0 < r0.z);
+  if (r0.z != 0) {
+    r3.xyz = r1.xyz * cb0[211].xyz + cb0[212].xyz;
+    r3.xyz = max(float3(0,0,0), r3.xyz);
+    r3.xyz = min(float3(0.99000001,0.99000001,0.99000001), r3.xyz);
+    r3.xyz = cb0[213].xyz * r3.xyz;
+    r5.xyz = (int3)r3.xyz;
+    r5.w = 0;
+    r5.xyzw = t0.Load(r5.xyzw).xyzw;
+    r5.xyzw = (uint4)r5.xyzw;
+    r0.z = 1 + cb0[213].w;
+    r3.xyz = r3.xyz / r5.www;
+    r3.xyz = frac(r3.xyz);
+    r3.xyz = cb0[213].www * r3.xyz;
+    r3.xyz = r5.xyz * r0.zzz + r3.xyz;
+    r3.xyz = float3(0.5,0.5,0.5) + r3.xyz;
+    r3.xyz = cb0[214].xyz * r3.xyz;
+    r0.z = t1.SampleLevel(s1_s, r3.xyz, 0).x;
+  } else {
+    r0.z = 1;
+  }
+  r0.w = 0.0799999982 * r4.y;
+  r3.xyz = -r4.yyy * float3(0.0799999982,0.0799999982,0.0799999982) + r2.xyz;
+  r3.xyz = r4.xxx * r3.xyz + r0.www;
+  r5.xyz = -r2.xyz * r4.xxx + r2.xyz;
+  r5.xyz = r5.xyz * cb0[136].www + cb0[136].xyz;
+  r3.xyz = r3.xyz * cb0[137].www + cb0[137].xyz;
+  r0.w = cmp(0 != cb0[183].w);
+  r6.xyz = float3(0.449999988,0.449999988,0.449999988) * r3.xyz;
+  r3.xyz = r3.xyz * float3(0.449999988,0.449999988,0.449999988) + r5.xyz;
+  r3.xyz = r0.www ? r3.xyz : r5.xyz;
+  r5.xyz = r0.www ? float3(0,0,0) : r6.xyz;
+  r3.xyz = r5.xyz + r3.xyz;
+  r5.xyz = max(float3(0,0,0), r7.xyz);
+  r0.w = cmp(0 < cb0[140].x);
+  if (r0.w != 0) {
+    r4.zw = mad((int2)v3.xx, int2(36,36), int2(5,19));
+    r6.x = t2[r4.z].val[0/4];
+    r6.y = t2[r4.z].val[0/4+1];
+    r6.z = t2[r4.z].val[0/4+2];
+    r6.xyz = -r6.xyz + r1.xyz;
+    r7.x = t2[r4.w].val[0/4];
+    r7.y = t2[r4.w].val[0/4+1];
+    r7.z = t2[r4.w].val[0/4+2];
+    r7.xyz = float3(1,1,1) + r7.xyz;
+    r6.xyz = cmp(r7.xyz < abs(r6.xyz));
+    r0.w = (int)r6.y | (int)r6.x;
+    r0.w = (int)r6.z | (int)r0.w;
+    r1.x = dot(r1.xyz, float3(0.577000022,0.577000022,0.577000022));
+    r1.x = 0.00200000009 * r1.x;
+    r1.x = frac(r1.x);
+    r1.x = cmp(0.5 < r1.x);
+    r1.xyz = r1.xxx ? float3(0,1,1) : float3(1,1,0);
+    r5.xyz = r0.www ? r1.xyz : r5.xyz;
+  }
+  r1.xyz = cb0[145].yyy * r3.xyz + r5.xyz;
+  r3.xyz = float3(0.0078125,0.0078125,0.0078125) * v5.xyx;
+  r3.xyz = frac(r3.xyz);
+  r3.xyz = r3.xyz * float3(128,128,128) + float3(-64.3406219,-72.4656219,-64.3406219);
+  r3.xyz = r3.xyz * r3.xyy;
+  r0.w = dot(r3.xyz, float3(20.390625,60.703125,2.42812085));
+  r0.w = frac(r0.w);
+  r0.w = -0.5 + r0.w;
+  o1.xyz = r9.xyw * float3(0.5,0.5,0.5) + float3(0.5,0.5,0.5);
+  o3.w = 0.00392156886 * r0.w;
+  o0.xyz = cb0[135].yyy * r1.xyz;
+  o0.w = 0;
+  o1.w = r0.x;
+  o2.w = 0.505882382;
+  o2.xy = r4.xy;
+  o3.xyz = r2.xyz;
+  o4.xyzw = float4(0,0,0,0);
+  o5.x = r0.z;
+  o5.yzw = float3(1,1,1);
+  o6.xyzw = float4(0,0,0,0);
+  oDepthLE = r0.y;
+  return;
+}

@@ -1,0 +1,44 @@
+# M_ENV_mst_decal_add_G8
+
+Source package: `pakchunk100-WindowsClient_0_P.pak`
+
+Asset: `pakchunk100-WindowsClient_0_P/BLUEPROTOCOL/Content/Environment/Common/MasterShader/Material/M_ENV_mst_decal_add_G8.uasset`
+
+[Parameter summary](../../../../../../../../summary/pakchunk100-WindowsClient_0_P/BLUEPROTOCOL/Content/Environment/Common/MasterShader/Material/M_ENV_mst_decal_add_G8.json) · [Raw JSON](../../../../../../../../raw/pakchunk100-WindowsClient_0_P/BLUEPROTOCOL/Content/Environment/Common/MasterShader/Material/M_ENV_mst_decal_add_G8.json)
+
+Object: `M_ENV_mst_decal_add_G8`; class: `/Script/Engine.Material`; parent material: `no explicit reference`; explicit ShadingModel: `not serialized / may be inherited`.
+
+## ShaderMap b603492cbe77ce5998348707c837fff32e0fc3fd
+
+Match basis: the 20-byte hash at .uexp byte offset 22782 is identical to the shader library in the same package; 27 shaders in total. The UE pass / permutation name of each shader was not identified further.
+
+| Stage | Shader hash | HLSL | Assembly | Status |
+|---|---|---|---|---|
+| ps | `20a54ffcdbbe40774c5d86fc4e29cb647374367b` | [View](../../../../../../../../../shaders/hlsl/ps/20a54ffcdbbe40774c5d86fc4e29cb647374367b.hlsl) | [View](../../../../../../../../../shaders/assembly/ps/20a54ffcdbbe40774c5d86fc4e29cb647374367b.msasm) | Not individually compile-verified |
+| vs | `21408a4a0ae2cca65dfb2ea6209b4a4bb18a3631` | [View](../../../../../../../../../shaders/hlsl/vs/21408a4a0ae2cca65dfb2ea6209b4a4bb18a3631.hlsl) | [View](../../../../../../../../../shaders/assembly/vs/21408a4a0ae2cca65dfb2ea6209b4a4bb18a3631.msasm) | Manual-fix marker present |
+| ps | `24658a30ff6e8abc6ccdf4e7df25014cafec7634` | [View](../../../../../../../../../shaders/hlsl/ps/24658a30ff6e8abc6ccdf4e7df25014cafec7634.hlsl) | [View](../../../../../../../../../shaders/assembly/ps/24658a30ff6e8abc6ccdf4e7df25014cafec7634.msasm) | Not individually compile-verified |
+| vs | `2e020d4b19f14685a11b0e79820f64d6da245e99` | [View](../../../../../../../../../shaders/hlsl/vs/2e020d4b19f14685a11b0e79820f64d6da245e99.hlsl) | [View](../../../../../../../../../shaders/assembly/vs/2e020d4b19f14685a11b0e79820f64d6da245e99.msasm) | Manual-fix marker present |
+| ps | `3b9590a8ae346accc1c0054513a00712e167cc86` | [View](../../../../../../../../../shaders/hlsl/ps/3b9590a8ae346accc1c0054513a00712e167cc86.hlsl) | [View](../../../../../../../../../shaders/assembly/ps/3b9590a8ae346accc1c0054513a00712e167cc86.msasm) | Not individually compile-verified |
+| ps | `43849a83268d45256c0014751939fce0d2f61646` | [View](../../../../../../../../../shaders/hlsl/ps/43849a83268d45256c0014751939fce0d2f61646.hlsl) | [View](../../../../../../../../../shaders/assembly/ps/43849a83268d45256c0014751939fce0d2f61646.msasm) | Not individually compile-verified |
+| ps | `46c5a2212572bf89382d61d25c004d8fea068e8b` | [View](../../../../../../../../../shaders/hlsl/ps/46c5a2212572bf89382d61d25c004d8fea068e8b.hlsl) | [View](../../../../../../../../../shaders/assembly/ps/46c5a2212572bf89382d61d25c004d8fea068e8b.msasm) | Not individually compile-verified |
+| ps | `51c54796b4712071c56751e3f4adebd7fbddf19f` | [View](../../../../../../../../../shaders/hlsl/ps/51c54796b4712071c56751e3f4adebd7fbddf19f.hlsl) | [View](../../../../../../../../../shaders/assembly/ps/51c54796b4712071c56751e3f4adebd7fbddf19f.msasm) | Not individually compile-verified |
+| vs | `5e6a59205c5cbe49eb950059ac2c30ebe5bb2f63` | [View](../../../../../../../../../shaders/hlsl/vs/5e6a59205c5cbe49eb950059ac2c30ebe5bb2f63.hlsl) | [View](../../../../../../../../../shaders/assembly/vs/5e6a59205c5cbe49eb950059ac2c30ebe5bb2f63.msasm) | Manual-fix marker present |
+| ps | `665a01208dee98c53215b604140853470ecefacc` | [View](../../../../../../../../../shaders/hlsl/ps/665a01208dee98c53215b604140853470ecefacc.hlsl) | [View](../../../../../../../../../shaders/assembly/ps/665a01208dee98c53215b604140853470ecefacc.msasm) | Not individually compile-verified |
+| vs | `7187f7b21e5666d230bc1ada8c6c9e6249f45939` | [View](../../../../../../../../../shaders/hlsl/vs/7187f7b21e5666d230bc1ada8c6c9e6249f45939.hlsl) | [View](../../../../../../../../../shaders/assembly/vs/7187f7b21e5666d230bc1ada8c6c9e6249f45939.msasm) | Manual-fix marker present |
+| ps | `83afe42b16b8a756e7c795a2deab68b19bc9593a` | [View](../../../../../../../../../shaders/hlsl/ps/83afe42b16b8a756e7c795a2deab68b19bc9593a.hlsl) | [View](../../../../../../../../../shaders/assembly/ps/83afe42b16b8a756e7c795a2deab68b19bc9593a.msasm) | Not individually compile-verified |
+| ps | `84f96e71abb39f1b9b94b7aff64d5552d464e7d3` | [View](../../../../../../../../../shaders/hlsl/ps/84f96e71abb39f1b9b94b7aff64d5552d464e7d3.hlsl) | [View](../../../../../../../../../shaders/assembly/ps/84f96e71abb39f1b9b94b7aff64d5552d464e7d3.msasm) | Not individually compile-verified |
+| ps | `86a9f28056404dfcc7802aab72d95429d189c8c8` | [View](../../../../../../../../../shaders/hlsl/ps/86a9f28056404dfcc7802aab72d95429d189c8c8.hlsl) | [View](../../../../../../../../../shaders/assembly/ps/86a9f28056404dfcc7802aab72d95429d189c8c8.msasm) | Not individually compile-verified |
+| ps | `8db4c4b484277581c8dc0754dc7378593755cc25` | [View](../../../../../../../../../shaders/hlsl/ps/8db4c4b484277581c8dc0754dc7378593755cc25.hlsl) | [View](../../../../../../../../../shaders/assembly/ps/8db4c4b484277581c8dc0754dc7378593755cc25.msasm) | Not individually compile-verified |
+| vs | `93cb295d9d48ce69728242fa22af44448da2b3ee` | [View](../../../../../../../../../shaders/hlsl/vs/93cb295d9d48ce69728242fa22af44448da2b3ee.hlsl) | [View](../../../../../../../../../shaders/assembly/vs/93cb295d9d48ce69728242fa22af44448da2b3ee.msasm) | Manual-fix marker present |
+| vs | `a314ec172f71af72459f080639839a3755d80d35` | [View](../../../../../../../../../shaders/hlsl/vs/a314ec172f71af72459f080639839a3755d80d35.hlsl) | [View](../../../../../../../../../shaders/assembly/vs/a314ec172f71af72459f080639839a3755d80d35.msasm) | Manual-fix marker present |
+| vs | `b78f39f9d6e39344295f260310313a576596a796` | [View](../../../../../../../../../shaders/hlsl/vs/b78f39f9d6e39344295f260310313a576596a796.hlsl) | [View](../../../../../../../../../shaders/assembly/vs/b78f39f9d6e39344295f260310313a576596a796.msasm) | Manual-fix marker present |
+| ps | `c4705d8a4dd9efca662ca0944001d3ba94d5f975` | [View](../../../../../../../../../shaders/hlsl/ps/c4705d8a4dd9efca662ca0944001d3ba94d5f975.hlsl) | [View](../../../../../../../../../shaders/assembly/ps/c4705d8a4dd9efca662ca0944001d3ba94d5f975.msasm) | Not individually compile-verified |
+| ps | `d0e69caa1fc149e0afb3a193003aed0bebab4b1f` | [View](../../../../../../../../../shaders/hlsl/ps/d0e69caa1fc149e0afb3a193003aed0bebab4b1f.hlsl) | [View](../../../../../../../../../shaders/assembly/ps/d0e69caa1fc149e0afb3a193003aed0bebab4b1f.msasm) | Not individually compile-verified |
+| ps | `d97ae6bf5e97a78f15c4fa92fa485c66c6b44846` | [View](../../../../../../../../../shaders/hlsl/ps/d97ae6bf5e97a78f15c4fa92fa485c66c6b44846.hlsl) | [View](../../../../../../../../../shaders/assembly/ps/d97ae6bf5e97a78f15c4fa92fa485c66c6b44846.msasm) | Not individually compile-verified |
+| vs | `da320dcbd32db391db5293cd933ec64ef0365f14` | [View](../../../../../../../../../shaders/hlsl/vs/da320dcbd32db391db5293cd933ec64ef0365f14.hlsl) | [View](../../../../../../../../../shaders/assembly/vs/da320dcbd32db391db5293cd933ec64ef0365f14.msasm) | Manual-fix marker present |
+| ps | `e89484aa5bf9e7b3b924aa6a6bab18ab73817a90` | [View](../../../../../../../../../shaders/hlsl/ps/e89484aa5bf9e7b3b924aa6a6bab18ab73817a90.hlsl) | [View](../../../../../../../../../shaders/assembly/ps/e89484aa5bf9e7b3b924aa6a6bab18ab73817a90.msasm) | Not individually compile-verified |
+| ps | `f5442a8a062a1b804561399b7002528d5fa92405` | [View](../../../../../../../../../shaders/hlsl/ps/f5442a8a062a1b804561399b7002528d5fa92405.hlsl) | [View](../../../../../../../../../shaders/assembly/ps/f5442a8a062a1b804561399b7002528d5fa92405.msasm) | Not individually compile-verified |
+| vs | `f8b4ff1c3c03db1ef72a5eac0d28614600e1d274` | [View](../../../../../../../../../shaders/hlsl/vs/f8b4ff1c3c03db1ef72a5eac0d28614600e1d274.hlsl) | [View](../../../../../../../../../shaders/assembly/vs/f8b4ff1c3c03db1ef72a5eac0d28614600e1d274.msasm) | Manual-fix marker present |
+| ps | `fd6506090ff9712be6ee3690a8c576916e5ee399` | [View](../../../../../../../../../shaders/hlsl/ps/fd6506090ff9712be6ee3690a8c576916e5ee399.hlsl) | [View](../../../../../../../../../shaders/assembly/ps/fd6506090ff9712be6ee3690a8c576916e5ee399.msasm) | Not individually compile-verified |
+| ps | `ffc6ee095d9fee1f2cdfe19cb4d928b5d42676a6` | [View](../../../../../../../../../shaders/hlsl/ps/ffc6ee095d9fee1f2cdfe19cb4d928b5d42676a6.hlsl) | [View](../../../../../../../../../shaders/assembly/ps/ffc6ee095d9fee1f2cdfe19cb4d928b5d42676a6.msasm) | Not individually compile-verified |
+

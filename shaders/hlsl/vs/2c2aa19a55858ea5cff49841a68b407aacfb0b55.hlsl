@@ -1,0 +1,401 @@
+// Decompiled with 3Dmigoto 1.3.16. Reconstructed HLSL; not original source.
+Buffer<float4> t6 : register(t6);
+
+Buffer<float4> t5 : register(t5);
+
+Buffer<float4> t4 : register(t4);
+
+Buffer<float4> t3 : register(t3);
+
+Buffer<uint4> t2 : register(t2);
+
+Buffer<float4> t1 : register(t1);
+
+Buffer<sint4> t0 : register(t0);
+
+cbuffer cb3 : register(b3)
+{
+  float4 cb3[13];
+}
+
+cbuffer cb2 : register(b2)
+{
+  float4 cb2[1];
+}
+
+cbuffer cb1 : register(b1)
+{
+  float4 cb1[5];
+}
+
+cbuffer cb0 : register(b0)
+{
+  float4 cb0[136];
+}
+
+
+
+
+// 3Dmigoto declarations
+#define cmp -
+
+
+void main(
+  uint v0 : SV_VertexID0,
+  out float4 o0 : SV_POSITION0,
+  out float4 o1 : TEXCOORD6,
+  out float4 o2 : TEXCOORD7,
+  out float4 o3 : TEXCOORD10,
+  out float4 o4 : TEXCOORD11,
+  out float4 o5 : TEXCOORD3)
+{
+// Needs manual fix for instruction:
+// unknown dcl_: dcl_input_sgv v0.x, vertex_id
+  float4 r0,r1,r2,r3,r4,r5,r6,r7,r8,r9;
+  uint4 bitmask, uiDest;
+  float4 fDest;
+
+  r0.xy = (uint2)v0.xx >> asuint(cb3[8].yw);
+  r1.x = (int)r0.x & asint(cb3[8].z);
+  r1.y = (int)r1.x + 1;
+  r0.x = cmp(asint(cb2[0].y) != -1);
+  if (r0.x != 0) {
+    r0.xz = (int2)r1.xy + asint(cb2[0].yy);
+    r0.x = t0.Load(r0.x).x;
+    r0.w = t0.Load(r0.z).x;
+  } else {
+    r0.xw = r1.xy;
+  }
+  r0.y = (int)r0.y & asint(cb3[9].x);
+  r0.y = (uint)r0.y;
+  r0.z = cb3[8].x * r0.y;
+  r1.z = t2.Load(r1.x).x;
+  r1.w = (int)r1.z * 7;
+  r1.w = t3.Load(r1.w).x;
+  r2.x = mad((int)r1.z, 7, 1);
+  r2.x = t3.Load(r2.x).x;
+  r3.xyzw = cmp(asint(cb3[3].xyzw) != int4(-1,-1,-1,-1));
+  if (r3.x != 0) {
+    r2.yz = asint(cb3[3].xx) & int2(0x80000000,0x7fffffff);
+    if (r2.y != 0) {
+      r2.yw = mad((int2)r2.zz, asint(cb2[0].xx), (int2)r0.xw);
+      r4.x = t5.Load(r2.y).x;
+      r5.xyzw = (int4)r2.zzzz + int4(1,2,1,2);
+      r5.xyzw = mad((int4)r5.xyzw, asint(cb2[0].xxxx), (int4)r0.xxww);
+      r4.y = t5.Load(r5.x).x;
+      r4.z = t5.Load(r5.y).x;
+      r6.x = t5.Load(r2.w).x;
+      r6.y = t5.Load(r5.z).x;
+      r6.z = t5.Load(r5.w).x;
+    } else {
+      r2.yw = mad((int2)r2.zz, asint(cb2[0].xx), (int2)r0.xw);
+      r4.x = t4.Load(r2.y).x;
+      r5.xyzw = (int4)r2.zzzz + int4(1,2,1,2);
+      r5.xyzw = mad((int4)r5.xyzw, asint(cb2[0].xxxx), (int4)r0.xxww);
+      r4.y = t4.Load(r5.x).x;
+      r4.z = t4.Load(r5.y).x;
+      r6.x = t4.Load(r2.w).x;
+      r6.y = t4.Load(r5.z).x;
+      r6.z = t4.Load(r5.w).x;
+    }
+    r5.xyzw = t1.Load(r1.x).xyzw;
+    r7.xyzw = t1.Load(r1.y).xyzw;
+    r8.xyzw = r7.xyzw + -r5.xyzw;
+    r1.y = r0.z * r0.z;
+    r2.y = r1.y * r0.z;
+    r2.z = 3 * r1.y;
+    r2.w = r2.y * 2 + -r2.z;
+    r2.w = 1 + r2.w;
+    r3.x = -r1.y * 2 + r2.y;
+    r3.x = r0.y * cb3[8].x + r3.x;
+    r3.x = r8.w * r3.x;
+    r9.xyz = r3.xxx * r5.xyz;
+    r4.xyz = r2.www * r4.xyz + r9.xyz;
+    r1.y = r1.y * r0.z + -r1.y;
+    r1.y = r8.w * r1.y;
+    r4.xyz = r1.yyy * r7.xyz + r4.xyz;
+    r1.y = r2.y * -2 + r2.z;
+    r2.yzw = r1.yyy * r6.xyz + r4.xyz;
+    r4.xyz = cb1[1].xyz * r2.zzz;
+    r4.xyz = cb1[0].xyz * r2.yyy + r4.xyz;
+    r4.xyz = cb1[2].xyz * r2.www + r4.xyz;
+    r4.xyz = cb1[3].xyz + r4.xyz;
+    r2.yzw = cb3[12].xxx ? r4.xyz : r2.yzw;
+    r4.xyzw = r0.zzzz * r8.wxyz + r5.wxyz;
+    r5.xyz = cb1[4].xxx * cb1[0].xyz;
+    r6.xyz = cb1[4].yyy * cb1[1].xyz;
+    r6.xyz = r6.xyz * r4.zzz;
+    r5.xyz = r5.xyz * r4.yyy + r6.xyz;
+    r6.xyz = cb1[4].zzz * cb1[2].xyz;
+    r5.xyz = r6.xyz * r4.www + r5.xyz;
+    r4.yzw = cb3[12].xxx ? r5.xyz : r4.yzw;
+    r1.y = dot(r4.yzw, r4.yzw);
+    r1.y = rsqrt(r1.y);
+    r4.yzw = r4.yzw * r1.yyy;
+  } else {
+    r4.xyzw = float4(0,0,0,0);
+    r2.yzw = float3(0,0,0);
+  }
+  if (r3.y != 0) {
+    r3.xy = asint(cb3[3].yy) & int2(0x80000000,0x7fffffff);
+    if (r3.x != 0) {
+      r5.xy = mad((int2)r3.yy, asint(cb2[0].xx), (int2)r0.xw);
+      r5.x = t5.Load(r5.x).x;
+      r6.xyzw = (int4)r3.yyyy + int4(1,2,1,2);
+      r6.xyzw = mad((int4)r6.xyzw, asint(cb2[0].xxxx), (int4)r0.xxww);
+      r5.z = t5.Load(r6.x).x;
+      r5.w = t5.Load(r6.y).x;
+      r7.x = t5.Load(r5.y).x;
+      r7.y = t5.Load(r6.z).x;
+      r7.z = t5.Load(r6.w).x;
+    } else {
+      r6.xy = mad((int2)r3.yy, asint(cb2[0].xx), (int2)r0.xw);
+      r5.x = t4.Load(r6.x).x;
+      r8.xyzw = (int4)r3.yyyy + int4(1,2,1,2);
+      r8.xyzw = mad((int4)r8.xyzw, asint(cb2[0].xxxx), (int4)r0.xxww);
+      r5.z = t4.Load(r8.x).x;
+      r5.w = t4.Load(r8.y).x;
+      r7.x = t4.Load(r6.y).x;
+      r7.y = t4.Load(r8.z).x;
+      r7.z = t4.Load(r8.w).x;
+    }
+    r6.xyz = r7.xyz + -r5.xzw;
+    r5.xyz = r0.zzz * r6.xyz + r5.xzw;
+    r6.xyz = cb1[4].xxx * cb1[0].xyz;
+    r7.xyz = cb1[4].yyy * cb1[1].xyz;
+    r7.xyz = r7.xyz * r5.yyy;
+    r6.xyz = r6.xyz * r5.xxx + r7.xyz;
+    r7.xyz = cb1[4].zzz * cb1[2].xyz;
+    r6.xyz = r7.xyz * r5.zzz + r6.xyz;
+    r5.xyz = cb3[12].xxx ? r6.xyz : r5.xyz;
+    r1.y = dot(r5.xyz, r5.xyz);
+    r3.x = rsqrt(r1.y);
+    r5.xyz = r5.xyz * r3.xxx;
+    r1.y = sqrt(r1.y);
+  } else {
+    r5.xyz = float3(0,0,0);
+    r1.y = 0;
+  }
+  r3.xy = cmp(asint(cb3[6].zw) != int2(-1,-1));
+  if (r3.x != 0) {
+    r6.xy = asint(cb3[6].zz) & int2(0x80000000,0x7fffffff);
+    if (r6.x != 0) {
+      r6.xz = mad((int2)r6.yy, asint(cb2[0].xx), (int2)r0.xw);
+      r3.x = t5.Load(r6.x).x;
+      r5.w = t5.Load(r6.z).x;
+    } else {
+      r6.xy = mad((int2)r6.yy, asint(cb2[0].xx), (int2)r0.xw);
+      r3.x = t4.Load(r6.x).x;
+      r5.w = t4.Load(r6.y).x;
+    }
+    r5.w = r5.w + -r3.x;
+    r3.x = r0.z * r5.w + r3.x;
+  } else {
+    r5.w = mad((int)r1.z, 7, 2);
+    r5.w = t3.Load(r5.w).x;
+    if (cb3[9].w == 0) {
+      r1.z = mad((int)r1.z, 7, 6);
+      r1.z = t3.Load(r1.z).x;
+      r1.x = (int)-r1.z + (int)r1.x;
+      r1.x = (uint)r1.x;
+      r0.y = r0.y * cb3[8].x + r1.x;
+      r3.x = r0.y * r5.w;
+    } else {
+      r1.xz = cmp(asint(cb3[9].ww) == int2(1,2));
+      r0.y = (int)r1.z | (int)r1.x;
+      if (r0.y != 0) {
+        r3.x = r5.w * r4.x;
+      } else {
+        r0.y = cmp(asint(cb3[6].y) != -1);
+        r1.x = cmp(asint(cb3[9].w) == 3);
+        r0.y = r0.y ? r1.x : 0;
+        if (r0.y != 0) {
+          r1.xz = asint(cb3[6].yy) & int2(0x80000000,0x7fffffff);
+          if (r1.x != 0) {
+            r6.xy = mad((int2)r1.zz, asint(cb2[0].xx), (int2)r0.xw);
+            r0.y = t5.Load(r6.x).x;
+            r1.x = t5.Load(r6.y).x;
+          } else {
+            r6.xy = mad((int2)r1.zz, asint(cb2[0].xx), (int2)r0.xw);
+            r0.y = t4.Load(r6.x).x;
+            r1.x = t4.Load(r6.y).x;
+          }
+          r1.x = r1.x + -r0.y;
+          r0.y = r0.z * r1.x + r0.y;
+          r3.x = r0.y * r5.w;
+        } else {
+          r3.x = 0;
+        }
+      }
+    }
+  }
+  if (r3.y != 0) {
+    r1.xz = asint(cb3[6].ww) & int2(0x80000000,0x7fffffff);
+    if (r1.x != 0) {
+      r6.xy = mad((int2)r1.zz, asint(cb2[0].xx), (int2)r0.xw);
+      r6.x = t5.Load(r6.x).x;
+      r0.y = (int)r1.z + 1;
+      r7.xy = mad((int2)r0.yy, asint(cb2[0].xx), (int2)r0.xw);
+      r6.z = t5.Load(r7.x).x;
+      r6.y = t5.Load(r6.y).x;
+      r6.w = t5.Load(r7.y).x;
+    } else {
+      r7.xy = mad((int2)r1.zz, asint(cb2[0].xx), (int2)r0.xw);
+      r6.x = t4.Load(r7.x).x;
+      r0.y = (int)r1.z + 1;
+      r1.xz = mad((int2)r0.yy, asint(cb2[0].xx), (int2)r0.xw);
+      r6.z = t4.Load(r1.x).x;
+      r6.y = t4.Load(r7.y).x;
+      r6.w = t4.Load(r1.z).x;
+    }
+    r1.xz = r6.yw + -r6.xz;
+    r1.xz = r0.zz * r1.xz + r6.xz;
+    r0.y = (int)v0.x & asint(cb3[9].y);
+    r0.y = mad((int)r0.y, 5, 4);
+    r0.y = t6.Load(r0.y).x;
+    r1.x = -r0.y * r1.x + 1;
+    r0.y = r0.y * r1.z + r1.x;
+  } else {
+    r1.x = (int)v0.x & asint(cb3[9].y);
+    r1.x = mad((int)r1.x, 5, 4);
+    r0.y = t6.Load(r1.x).x;
+  }
+  o5.x = r3.x * r1.w + r2.x;
+  o5.y = r0.y * cb3[11].x + cb3[11].y;
+  r1.xz = asint(cb3[3].zz) & int2(0x80000000,0x7fffffff);
+  if (r1.x != 0) {
+    r1.xw = mad((int2)r1.zz, asint(cb2[0].xx), (int2)r0.xw);
+    r0.y = t5.Load(r1.x).x;
+    r1.x = t5.Load(r1.w).x;
+  } else {
+    r1.zw = mad((int2)r1.zz, asint(cb2[0].xx), (int2)r0.xw);
+    r0.y = t4.Load(r1.z).x;
+    r1.x = t4.Load(r1.w).x;
+  }
+  r1.x = r1.x + -r0.y;
+  r0.y = r0.z * r1.x + r0.y;
+  r0.y = r3.z ? r0.y : 1;
+  r1.x = cmp(asint(cb3[4].y) != -1);
+  if (r1.x != 0) {
+    r1.xz = asint(cb3[4].yy) & int2(0x80000000,0x7fffffff);
+    if (r1.x != 0) {
+      r1.xw = mad((int2)r1.zz, asint(cb2[0].xx), (int2)r0.xw);
+      r3.x = t5.Load(r1.x).x;
+      r6.xyzw = (int4)r1.zzzz + int4(1,2,1,2);
+      r6.xyzw = mad((int4)r6.xyzw, asint(cb2[0].xxxx), (int4)r0.xxww);
+      r3.y = t5.Load(r6.x).x;
+      r3.z = t5.Load(r6.y).x;
+      r7.x = t5.Load(r1.w).x;
+      r7.y = t5.Load(r6.z).x;
+      r7.z = t5.Load(r6.w).x;
+    } else {
+      r1.xw = mad((int2)r1.zz, asint(cb2[0].xx), (int2)r0.xw);
+      r3.x = t4.Load(r1.x).x;
+      r6.xyzw = (int4)r1.zzzz + int4(1,2,1,2);
+      r6.xyzw = mad((int4)r6.xyzw, asint(cb2[0].xxxx), (int4)r0.xxww);
+      r3.y = t4.Load(r6.x).x;
+      r3.z = t4.Load(r6.y).x;
+      r7.x = t4.Load(r1.w).x;
+      r7.y = t4.Load(r6.z).x;
+      r7.z = t4.Load(r6.w).x;
+    }
+    r1.xzw = r7.xyz + -r3.xyz;
+    r1.xzw = r0.zzz * r1.xzw + r3.xyz;
+    r3.xyz = cb1[4].xxx * cb1[0].xyz;
+    r6.xyz = cb1[4].yyy * cb1[1].xyz;
+    r6.xyz = r6.xyz * r1.zzz;
+    r3.xyz = r3.xyz * r1.xxx + r6.xyz;
+    r6.xyz = cb1[4].zzz * cb1[2].xyz;
+    r3.xyz = r6.xyz * r1.www + r3.xyz;
+    r1.xzw = cb3[12].xxx ? r3.xyz : r1.xzw;
+    r2.x = dot(r1.xzw, r1.xzw);
+    r2.x = rsqrt(r2.x);
+    r1.xzw = r2.xxx * r1.xzw;
+  } else {
+    r3.xyz = cb0[67].xyz + -r2.yzw;
+    r2.x = dot(r3.xyz, r3.xyz);
+    r2.x = rsqrt(r2.x);
+    r1.xzw = r3.xyz * r2.xxx;
+  }
+  r3.xyz = r1.wxz * r4.zwy;
+  r3.xyz = r1.zwx * r4.wyz + -r3.xyz;
+  r2.x = dot(r3.xyz, r3.xyz);
+  r2.x = rsqrt(r2.x);
+  r3.xyz = r3.xyz * r2.xxx;
+  r2.x = cmp(asint(cb2[0].z) == 2);
+  r6.xyz = r2.xxx ? r3.xyz : r1.xzw;
+  r1.xzw = r2.xxx ? -r1.xzw : r3.xyz;
+  if (r3.w != 0) {
+    r3.xy = asint(cb3[3].ww) & int2(0x80000000,0x7fffffff);
+    if (r3.x != 0) {
+      r3.xz = mad((int2)r3.yy, asint(cb2[0].xx), (int2)r0.xw);
+      r2.x = t5.Load(r3.x).x;
+      r3.x = t5.Load(r3.z).x;
+    } else {
+      r0.xw = mad((int2)r3.yy, asint(cb2[0].xx), (int2)r0.xw);
+      r2.x = t4.Load(r0.x).x;
+      r3.x = t4.Load(r0.w).x;
+    }
+    r0.x = r3.x + -r2.x;
+    r0.x = r0.z * r0.x + r2.x;
+    sincos(r0.x, r0.x, r2.x);
+    r3.xyz = r0.xxx * r6.xyz;
+    r3.xyz = r2.xxx * r1.xzw + r3.xyz;
+    r7.xyz = r2.xxx * r6.xyz;
+    r6.xyz = -r0.xxx * r1.xzw + r7.xyz;
+    r1.xzw = r3.xyz;
+  }
+  r0.xzw = r4.wyz * r1.zwx;
+  r0.xzw = r4.zwy * r1.wxz + -r0.xzw;
+  r2.x = cmp(asuint(cb2[0].w) >= 1);
+  r3.xyz = r2.xxx ? r0.xzw : r6.xyz;
+  r2.x = (int)v0.x & asint(cb3[9].y);
+  r3.w = (int)r2.x * 5;
+  r6.xyz = mad((int3)r2.xxx, int3(5,5,5), int3(2,3,1));
+  r2.x = t6.Load(r6.x).x;
+  r4.x = t6.Load(r6.y).x;
+  r6.xyw = r2.xxx * r1.xzw;
+  r3.xyz = r3.xyz * r4.xxx + r6.xyw;
+  r2.x = dot(r3.xyz, r3.xyz);
+  r2.x = rsqrt(r2.x);
+  r3.xyz = r3.xyz * r2.xxx;
+  r6.xyw = cb0[67].xyz + -r2.yzw;
+  r2.x = dot(r6.xyw, r6.xyw);
+  r2.x = rsqrt(r2.x);
+  r6.xyw = r6.xyw * r2.xxx;
+  r2.x = cmp(0 < asint(cb3[9].z));
+  r4.x = dot(r6.xyw, r3.xyz);
+  r4.x = cmp(r4.x < 0);
+  r2.x = r2.x ? r4.x : 0;
+  r2.x = r2.x ? -1 : 1;
+  r3.xyz = r3.xyz * r2.xxx;
+  r6.xyw = r3.zxy * r4.zwy;
+  o3.xyz = r3.yzx * r4.wyz + -r6.xyw;
+  r2.x = t6.Load(r3.w).x;
+  r3.w = t6.Load(r6.z).x;
+  r0.xzw = r3.www * r0.xzw;
+  r0.xzw = r1.xzw * r2.xxx + r0.xzw;
+  r0.xyz = r0.xzw * r0.yyy + r2.yzw;
+  r0.xyz = cb0[70].xyz + r0.xyz;
+  r0.w = cb3[12].y * r1.y;
+  r1.xyz = -r5.xyz * r0.www + r0.xyz;
+  r2.xyzw = cb0[92].xyzw * r1.yyyy;
+  r2.xyzw = r1.xxxx * cb0[91].xyzw + r2.xyzw;
+  r1.xyzw = r1.zzzz * cb0[93].xyzw + r2.xyzw;
+  o2.xyzw = cb0[94].xyzw + r1.xyzw;
+  r1.xyzw = cb0[1].xyzw * r0.yyyy;
+  r1.xyzw = r0.xxxx * cb0[0].xyzw + r1.xyzw;
+  r0.xyzw = r0.zzzz * cb0[2].xyzw + r1.xyzw;
+  r0.xyzw = cb0[3].xyzw + r0.xyzw;
+  r1.x = cmp(1 < asint(cb0[135].x));
+  r1.y = 0.00100000005 * r0.w;
+  r1.x = r1.x ? r1.y : 0;
+  o0.z = r1.x + r0.z;
+  o0.xyw = r0.xyw;
+  o1.xyzw = r0.xyzw;
+  o3.w = 0;
+  o4.xyz = r3.xyz;
+  o4.w = 1;
+  o5.zw = float2(0,0);
+  return;
+}

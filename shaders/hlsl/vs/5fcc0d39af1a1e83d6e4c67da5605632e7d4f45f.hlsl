@@ -1,0 +1,90 @@
+// Decompiled with 3Dmigoto 1.3.16. Reconstructed HLSL; not original source.
+Texture3D<float4> t0 : register(t0);
+
+SamplerState s0_s : register(s0);
+
+cbuffer cb2 : register(b2)
+{
+  float4 cb2[9];
+}
+
+cbuffer cb1 : register(b1)
+{
+  float4 cb1[29];
+}
+
+cbuffer cb0 : register(b0)
+{
+  float4 cb0[68];
+}
+
+
+
+
+// 3Dmigoto declarations
+#define cmp -
+
+
+void main(
+  uint v0 : SV_VertexID0,
+  uint v1 : SV_InstanceID0,
+  out float o0 : TEXCOORD6,
+  out float p0 : TEXCOORD8,
+  out float4 o1 : SV_POSITION0)
+{
+// Needs manual fix for instruction:
+// unknown dcl_: dcl_input_sgv v0.x, vertex_id
+// Needs manual fix for instruction:
+// unknown dcl_: dcl_input_sgv v1.x, instance_id
+  float4 r0,r1,r2;
+  uint4 bitmask, uiDest;
+  float4 fDest;
+
+  r0.z = cb2[8].x * cb2[8].y;
+  r0.w = (uint)v1.x;
+  r0.x = 1;
+  r0.y = cb2[8].x;
+  r0.xyz = r0.www * r0.xyz;
+  r0.xyz = floor(r0.xyz);
+  r0.xyz = cb2[8].xyz * r0.xyz;
+  r0.xyz = frac(r0.xyz);
+  r0.xyz = cb2[8].xyz * float3(0.5,0.5,0.5) + r0.xyz;
+  r1.xyz = cb2[1].xyz * r0.yyy;
+  r1.xyz = r0.xxx * cb2[0].xyz + r1.xyz;
+  r1.xyz = r0.zzz * cb2[2].xyz + r1.xyz;
+  r0.xyz = t0.SampleLevel(s0_s, r0.xyz, 0).xyz;
+  r1.xyz = cb2[3].xyz + r1.xyz;
+  r1.xyz = -cb0[67].xyz + r1.xyz;
+  r0.w = dot(r0.xyz, r0.xyz);
+  r1.w = rsqrt(r0.w);
+  r0.w = sqrt(r0.w);
+  r0.w = cb2[8].w * r0.w;
+  r0.w = min(10, r0.w);
+  r0.xyz = r1.www * r0.xyz;
+  r0.xyz = r0.xyz * r0.www;
+  r2.xyz = cb2[5].xyz * r0.yyy;
+  r0.xyw = r0.xxx * cb2[4].xyz + r2.xyz;
+  r0.xyz = r0.zzz * cb2[6].xyz + r0.xyw;
+  r0.w = (uint)v0.x;
+  r0.xyz = r0.www * r0.xyz + r1.xyz;
+  r1.xyzw = cb1[20].xyzw * r0.yyyy;
+  r1.xyzw = r0.xxxx * cb1[19].xyzw + r1.xyzw;
+  r0.xyzw = r0.zzzz * cb1[21].xyzw + r1.xyzw;
+  r0.xyzw = cb1[22].xyzw + r0.xyzw;
+  r1.x = cmp(r0.z < 0);
+  r1.y = cmp(0 < cb1[28].x);
+  r1.x = r1.x ? r1.y : 0;
+  r0.zw = r1.xx ? float2(9.99999997e-007,1) : r0.zw;
+  o0.x = r0.z;
+  o1.xyzw = r0.xyzw;
+  r0.x = -abs(cb1[25].z) * abs(cb1[25].z) + 1;
+  r0.x = max(0, r0.x);
+  r0.x = sqrt(r0.x);
+  r0.x = r0.x / abs(cb1[25].z);
+  r0.y = cmp(0 < abs(cb1[25].z));
+  r0.x = r0.y ? r0.x : cb1[27].z;
+  r0.x = max(0, r0.x);
+  r0.x = min(cb1[27].z, r0.x);
+  p0.x = cb1[27].y * r0.x + cb1[27].x;
+  return;
+}

@@ -1,0 +1,174 @@
+// Decompiled with 3Dmigoto 1.3.16. Reconstructed HLSL; not original source.
+Texture2D<float4> t6 : register(t6);
+
+Texture2D<float4> t5 : register(t5);
+
+Texture2D<float4> t4 : register(t4);
+
+Texture2D<float4> t3 : register(t3);
+
+Texture2D<float4> t2 : register(t2);
+
+Texture2D<float4> t1 : register(t1);
+
+Texture2D<float4> t0 : register(t0);
+
+SamplerState s6_s : register(s6);
+
+SamplerState s5_s : register(s5);
+
+SamplerState s4_s : register(s4);
+
+SamplerState s3_s : register(s3);
+
+SamplerState s2_s : register(s2);
+
+SamplerState s1_s : register(s1);
+
+SamplerState s0_s : register(s0);
+
+cbuffer cb2 : register(b2)
+{
+  float4 cb2[91];
+}
+
+cbuffer cb1 : register(b1)
+{
+  float4 cb1[1];
+}
+
+cbuffer cb0 : register(b0)
+{
+  float4 cb0[153];
+}
+
+
+
+
+// 3Dmigoto declarations
+#define cmp -
+
+
+void main(
+  float4 v0 : SV_Position0,
+  float4 v1 : TEXCOORD6,
+  float4 v2 : TEXCOORD7,
+  float4 v3 : TEXCOORD10,
+  float4 v4 : TEXCOORD11,
+  float4 v5 : COLOR0,
+  float4 v6 : TEXCOORD0,
+  uint v7 : PRIMITIVE_ID0,
+  uint v8 : SV_IsFrontFace0,
+  out float4 o0 : SV_Target0)
+{
+  float4 r0,r1,r2;
+  uint4 bitmask, uiDest;
+  float4 fDest;
+
+  r0.xy = cb2[14].xy + v6.xy;
+  r0.xy = r0.xy * float2(2,2) + float2(-1,-1);
+  r0.z = max(abs(r0.y), abs(r0.x));
+  r0.z = 1 / r0.z;
+  r0.w = min(abs(r0.y), abs(r0.x));
+  r0.z = r0.w * r0.z;
+  r0.w = r0.z * r0.z;
+  r1.x = r0.w * 0.0208350997 + -0.0851330012;
+  r1.x = r0.w * r1.x + 0.180141002;
+  r1.x = r0.w * r1.x + -0.330299497;
+  r0.w = r0.w * r1.x + 0.999866009;
+  r1.x = r0.z * r0.w;
+  r1.x = r1.x * -2 + 1.57079637;
+  r1.y = cmp(abs(r0.x) < abs(r0.y));
+  r1.x = r1.y ? r1.x : 0;
+  r0.z = r0.z * r0.w + r1.x;
+  r0.w = cmp(r0.x < -r0.x);
+  r0.w = r0.w ? -3.141593 : 0;
+  r0.z = r0.z + r0.w;
+  r0.w = min(r0.y, r0.x);
+  r0.w = cmp(r0.w < -r0.w);
+  r1.x = max(r0.y, r0.x);
+  r0.xy = r0.xy * r0.xy;
+  r0.x = r0.x + r0.y;
+  r0.x = sqrt(r0.x);
+  r0.y = cmp(r1.x >= -r1.x);
+  r0.y = r0.y ? r0.w : 0;
+  r0.y = r0.y ? -r0.z : r0.z;
+  r0.y = 0.159154952 * r0.y;
+  r0.y = frac(r0.y);
+  r0.z = cb0[142].z * cb2[69].y + r0.y;
+  r0.y = cb0[142].z * cb2[67].y + r0.y;
+  r1.x = cb2[68].x * r0.y;
+  r0.y = cb0[142].z * cb2[70].y + r0.x;
+  r0.x = cb0[142].z * cb2[68].y + r0.x;
+  r1.y = cb2[68].z * r0.x;
+  r2.xy = cb2[70].xz * r0.zy;
+  r0.x = t1.SampleBias(s1_s, r2.xy, cb0[143].y).y;
+  r0.yz = cb2[12].xy + -v6.xy;
+  r0.w = dot(r0.yz, r0.yz);
+  r0.w = sqrt(r0.w);
+  r0.yz = r0.yz / r0.ww;
+  r0.xw = r0.yz * r0.xx;
+  r0.xw = r0.xw * cb2[71].xx + r1.xy;
+  r0.x = t2.SampleBias(s2_s, r0.xw, cb0[143].y).x;
+  r0.xy = r0.yz * r0.xx;
+  r0.xy = r0.xy * cb2[71].zz + v6.xy;
+  r0.z = t3.SampleBias(s3_s, r0.xy, cb0[143].y).w;
+  r0.x = t5.SampleBias(s5_s, r0.xy, cb0[143].y).y;
+  r0.x = r0.x * cb2[75].y + cb2[75].z;
+  r0.y = cmp(r0.z >= cb2[89].z);
+  r0.y = r0.y ? 1.000000 : 0;
+  r0.z = -cb2[90].x + v5.w;
+  r0.y = r0.y * r0.z;
+  r0.z = cb0[142].z * cb2[72].z + v6.x;
+  r1.x = cb2[73].y * r0.z;
+  r0.z = cb0[142].z * cb2[73].z + v6.y;
+  r1.y = cb2[73].w * r0.z;
+  r0.z = t4.SampleBias(s4_s, r1.xy, cb0[143].y).x;
+  r0.z = -0.5 + r0.z;
+  r0.z = r0.z + r0.z;
+  r1.x = cb2[74].z * r0.z;
+  r1.y = cb2[75].x * r0.z;
+  r0.xz = r1.xy * r0.xx + v6.xy;
+  r0.x = t0.SampleBias(s0_s, r0.xz, cb0[143].y).x;
+  r0.x = -1 + r0.x;
+  r0.z = cb2[76].w + r0.x;
+  r0.x = cb2[78].x + r0.x;
+  r0.xz = saturate(ceil(r0.xz));
+  r0.w = 1 + -r0.z;
+  r0.z = cb2[89].y * r0.w + r0.z;
+  r0.y = r0.z * r0.y;
+  r0.z = 1 + -r0.x;
+  r0.x = cb2[90].y * r0.z + r0.x;
+  r0.x = r0.y * r0.x;
+  r0.x = saturate(ceil(r0.x));
+  r0.yz = -cb0[129].xy + v0.xy;
+  r1.xy = cb0[152].xx + r0.yz;
+  r0.yz = float2(0.015625,0.015625) * r0.yz;
+  r0.y = t6.SampleBias(s6_s, r0.yz, cb0[143].y).x;
+  r0.zw = (uint2)r1.xy;
+  r0.w = (uint)r0.w << 1;
+  r0.z = (int)r0.w + (int)r0.z;
+  r0.z = (uint)r0.z % 5;
+  r0.z = (uint)r0.z;
+  r0.y = r0.z + r0.y;
+  r0.y = 0.166666672 * r0.y;
+  r0.z = saturate(cb0[142].w * cb1[0].x + cb1[0].y);
+  r0.y = cb2[89].x * r0.z + r0.y;
+  r0.y = -0.5 + r0.y;
+  r0.x = r0.y * r0.x + -0.333299994;
+  r0.x = cmp(r0.x < 0);
+  if (r0.x != 0) discard;
+  r0.xyz = v1.xyz / v1.www;
+  r0.xy = -cb0[126].xy + r0.xy;
+  r1.xyz = v2.xyz / v2.www;
+  r1.xy = -cb0[126].zw + r1.xy;
+  r0.xyz = -r1.xyz + r0.xyz;
+  o0.xy = r0.xy * float2(0.249500006,0.249500006) + float2(0.499992371,0.499992371);
+  r0.x = (uint)r0.z >> 16;
+  r0.y = (int)r0.z & 0x0000ffff;
+  r0.xy = (uint2)r0.xy;
+  r0.y = r0.y * 1.52590219e-005 + 1.52590223e-006;
+  r0.x = r0.x * 1.52590219e-005 + 1.52590223e-006;
+  o0.zw = min(float2(1,1), r0.xy);
+  return;
+}

@@ -1,0 +1,113 @@
+{
+  "asset": "pakchunk100-WindowsClient/BLUEPROTOCOL/Content/Environment/Common/MasterShader/Material/M_PostLUT.uasset",
+  "pak": "pakchunk100-WindowsClient.pak",
+  "sourceJson": "materials/raw/pakchunk100-WindowsClient/BLUEPROTOCOL/Content/Environment/Common/MasterShader/Material/M_PostLUT.json",
+  "objects": [
+    {
+      "name": "M_PostLUT",
+      "class": "/Script/Engine.Material",
+      "parent": null,
+      "shadingModel": null,
+      "blendMode": null,
+      "parameters": {
+        "ScalarParameterValues": [],
+        "VectorParameterValues": [],
+        "TextureParameterValues": []
+      },
+      "properties": [
+        {
+          "name": "EmissiveColor",
+          "value": [
+            {
+              "name": "EmissiveColor",
+              "arrayIndex": 0,
+              "value": {
+                "$type": "UAssetAPI.PropertyTypes.Structs.ColorPropertyData, UAssetAPI",
+                "Name": "EmissiveColor",
+                "ArrayIndex": 0,
+                "PropertyGuid": null,
+                "IsZero": false,
+                "PropertyTagFlags": "None",
+                "PropertyTypeName": null,
+                "PropertyTagExtensions": "NoExtension",
+                "Value": "0, 0, 0, 0"
+              }
+            }
+          ]
+        },
+        {
+          "name": "MaterialDomain",
+          "value": {
+            "enum": "EMaterialDomain",
+            "value": "MD_PostProcess"
+          }
+        },
+        {
+          "name": "bCanMaskedBeAssumedOpaque",
+          "value": true
+        },
+        {
+          "name": "StateId",
+          "value": [
+            {
+              "name": "StateId",
+              "arrayIndex": 0,
+              "value": "{D19E7BD9-411E-F244-7903-B489D45D6A7B}"
+            }
+          ]
+        }
+      ],
+      "hasUnparsedExtras": true
+    }
+  ],
+  "packageReferences": [
+    "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat3Components",
+    "/Engine/MapTemplates/lut/LUT_Afternoon",
+    "/Game/Environment/Common/MasterShader/Material/M_PostLUT",
+    "/Game/Environment/Common/MasterShader/Material/MF_LUTSample",
+    "/Game/Environment/Common/MasterShader/Texture/RGBTable16x1"
+  ],
+  "shaderMaps": [
+    {
+      "hash": "b0ae39751d80d938383d9d9a40f6848439daefec",
+      "library": "pakchunk100-WindowsClient__ShaderArchive-BLUEPROTOCOL_Chunk100-PCD3D_SM5",
+      "byteOffset": 5506,
+      "method": "exact-20-byte-hash-in-uexp",
+      "shaderCount": 4,
+      "shaders": [
+        {
+          "hash": "833f45be0085b4849669208f06a38139b0991950",
+          "stage": "vs",
+          "hlsl": "shaders/hlsl/vs/833f45be0085b4849669208f06a38139b0991950.hlsl",
+          "assembly": "shaders/assembly/vs/833f45be0085b4849669208f06a38139b0991950.msasm",
+          "needsManualFix": true,
+          "dxbcSha256": "0de3d07ed20e060747bad841020386e89a62dea20658dfa79fdcf8e5ff177556"
+        },
+        {
+          "hash": "b76e26b9baf895c8eb14ec3b186a45eb0530d47d",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/b76e26b9baf895c8eb14ec3b186a45eb0530d47d.hlsl",
+          "assembly": "shaders/assembly/ps/b76e26b9baf895c8eb14ec3b186a45eb0530d47d.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "08bce54485b162d37f3dbd2fa6c95ba0b84ad29afccaca612cf5c97e449a3860"
+        },
+        {
+          "hash": "ebb19706d5233db241ce8019c03f13742ba7d740",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/ebb19706d5233db241ce8019c03f13742ba7d740.hlsl",
+          "assembly": "shaders/assembly/ps/ebb19706d5233db241ce8019c03f13742ba7d740.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "dd342a3613be476aa1131f04472436d33c483e40f4ba10dadd0d40890d9ca2b5"
+        },
+        {
+          "hash": "fea0682cf575a6e5d275ca1557650294e0337ee4",
+          "stage": "vs",
+          "hlsl": "shaders/hlsl/vs/fea0682cf575a6e5d275ca1557650294e0337ee4.hlsl",
+          "assembly": "shaders/assembly/vs/fea0682cf575a6e5d275ca1557650294e0337ee4.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "c7ac6fabb95614766017fb8dbc8b57a920d09d6327cb2089f57ad2d290f7972a"
+        }
+      ]
+    }
+  ]
+}

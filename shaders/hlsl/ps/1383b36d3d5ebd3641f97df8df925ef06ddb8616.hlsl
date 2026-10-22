@@ -1,0 +1,40 @@
+// Decompiled with 3Dmigoto 1.3.16. Reconstructed HLSL; not original source.
+Texture2D<float4> t0 : register(t0);
+
+SamplerState s0_s : register(s0);
+
+cbuffer cb0 : register(b0)
+{
+  float4 cb0[42];
+}
+
+
+
+
+// 3Dmigoto declarations
+#define cmp -
+
+
+void main(
+  float4 v0 : TEXCOORD0,
+  linear noperspective float4 v1 : TEXCOORD1,
+  linear noperspective float4 v2 : TEXCOORD2,
+  linear noperspective float4 v3 : TEXCOORD3,
+  out float4 o0 : SV_Target0)
+{
+  float4 r0,r1;
+  uint4 bitmask, uiDest;
+  float4 fDest;
+
+  r0.xyzw = t0.SampleLevel(s0_s, v1.zw, 0).xyzw;
+  r0.xyzw = cb0[38].xyzw * r0.xyzw;
+  r1.xyzw = t0.SampleLevel(s0_s, v1.xy, 0).xyzw;
+  r0.xyzw = r1.xyzw * cb0[37].xyzw + r0.xyzw;
+  r1.xyzw = t0.SampleLevel(s0_s, v2.xy, 0).xyzw;
+  r0.xyzw = r1.xyzw * cb0[39].xyzw + r0.xyzw;
+  r1.xyzw = t0.SampleLevel(s0_s, v2.zw, 0).xyzw;
+  r0.xyzw = r1.xyzw * cb0[40].xyzw + r0.xyzw;
+  r1.xyzw = t0.SampleLevel(s0_s, v3.xy, 0).xyzw;
+  o0.xyzw = r1.xyzw * cb0[41].xyzw + r0.xyzw;
+  return;
+}

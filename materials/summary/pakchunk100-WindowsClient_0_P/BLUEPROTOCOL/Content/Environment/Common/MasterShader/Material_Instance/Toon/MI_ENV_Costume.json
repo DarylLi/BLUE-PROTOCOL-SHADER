@@ -1,0 +1,835 @@
+{
+  "asset": "pakchunk100-WindowsClient_0_P/BLUEPROTOCOL/Content/Environment/Common/MasterShader/Material_Instance/Toon/MI_ENV_Costume.uasset",
+  "pak": "pakchunk100-WindowsClient_0_P.pak",
+  "sourceJson": "materials/raw/pakchunk100-WindowsClient_0_P/BLUEPROTOCOL/Content/Environment/Common/MasterShader/Material_Instance/Toon/MI_ENV_Costume.json",
+  "objects": [
+    {
+      "name": "MI_ENV_Costume",
+      "class": "/Script/Engine.MaterialInstanceConstant",
+      "parent": "/Game/Environment/Common/MasterShader/Material_Instance/Toon/MI_ENV_TreasureBox.MI_ENV_TreasureBox",
+      "shadingModel": null,
+      "blendMode": null,
+      "parameters": {
+        "ScalarParameterValues": [
+          {
+            "name": "DitherNearClip_Depth",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "DitherNearClip_Depth"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": 60
+          },
+          {
+            "name": "RefractionDepthBias",
+            "parameterInfo": [
+              {
+                "name": "Name",
+                "arrayIndex": 0,
+                "value": "RefractionDepthBias"
+              },
+              {
+                "name": "Association",
+                "arrayIndex": 0,
+                "value": {
+                  "enum": "EMaterialParameterAssociation",
+                  "value": "GlobalParameter"
+                }
+              },
+              {
+                "name": "Index",
+                "arrayIndex": 0,
+                "value": -1
+              }
+            ],
+            "value": "+0"
+          }
+        ],
+        "VectorParameterValues": [],
+        "TextureParameterValues": []
+      },
+      "properties": [
+        {
+          "name": "Parent",
+          "value": -2
+        },
+        {
+          "name": "bHasStaticPermutationResource",
+          "value": true
+        },
+        {
+          "name": "BasePropertyOverrides",
+          "value": [
+            {
+              "name": "bOverride_DirectionalLightHeightScale",
+              "arrayIndex": 0,
+              "value": true
+            },
+            {
+              "name": "BlendMode",
+              "arrayIndex": 0,
+              "value": {
+                "enum": "EBlendMode",
+                "value": "BLEND_Masked"
+              }
+            },
+            {
+              "name": "ShadingModel",
+              "arrayIndex": 0,
+              "value": {
+                "enum": "EMaterialShadingModel",
+                "value": "MSM_ToonCharacter"
+              }
+            },
+            {
+              "name": "OpacityMaskClipValue",
+              "arrayIndex": 0,
+              "value": 0.33329999446868896
+            },
+            {
+              "name": "DirectionalLightHeightScale",
+              "arrayIndex": 0,
+              "value": false
+            }
+          ]
+        },
+        {
+          "name": "StaticParameters",
+          "value": [
+            {
+              "name": "StaticSwitchParameters",
+              "arrayIndex": 0,
+              "value": [
+                {
+                  "name": "StaticSwitchParameters",
+                  "arrayIndex": 0,
+                  "structType": "StaticSwitchParameter",
+                  "value": [
+                    {
+                      "name": "Value",
+                      "arrayIndex": 0,
+                      "value": true
+                    },
+                    {
+                      "name": "ParameterInfo",
+                      "arrayIndex": 0,
+                      "structType": "MaterialParameterInfo",
+                      "value": [
+                        {
+                          "name": "Name",
+                          "arrayIndex": 0,
+                          "value": "CustomBaseColor"
+                        },
+                        {
+                          "name": "Association",
+                          "arrayIndex": 0,
+                          "value": {
+                            "enum": "EMaterialParameterAssociation",
+                            "value": "GlobalParameter"
+                          }
+                        },
+                        {
+                          "name": "Index",
+                          "arrayIndex": 0,
+                          "value": -1
+                        }
+                      ]
+                    },
+                    {
+                      "name": "bOverride",
+                      "arrayIndex": 0,
+                      "value": true
+                    },
+                    {
+                      "name": "ExpressionGUID",
+                      "arrayIndex": 0,
+                      "structType": "Guid",
+                      "value": [
+                        {
+                          "name": "ExpressionGUID",
+                          "arrayIndex": 0,
+                          "value": "{C8A9DA00-4D14-95E1-91B1-ECB87FE068DF}"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "StencilMaskSettings",
+          "value": [
+            {
+              "name": "bEnableNormalOutline",
+              "arrayIndex": 0,
+              "value": true
+            },
+            {
+              "name": "bOverrideEnableNormalOutline",
+              "arrayIndex": 0,
+              "value": true
+            }
+          ]
+        }
+      ],
+      "hasUnparsedExtras": true
+    }
+  ],
+  "packageReferences": [
+    "/Engine/EditorMaterials/Cascade/CASC_Cross",
+    "/Engine/EditorMaterials/Cascade/CASC_None",
+    "/Engine/EngineMaterials/DefaultDiffuse",
+    "/Engine/EngineMaterials/FlatNormal",
+    "/Engine/EngineMaterials/Good64x64TilingNoiseHighFreq",
+    "/Game/Character/Common/Material/Face/Texture/C000_fac_00_EX",
+    "/Game/Character/Common/Texture/Default_MASK",
+    "/Game/Character/Common/Texture/matcap/toon_steel01",
+    "/Game/Character/Material/DefaultTexture/base_tex",
+    "/Game/Character/Material/DefaultTexture/T_CH_ColorMask",
+    "/Game/Character/Material/DefaultTexture/T_CH_diffuse",
+    "/Game/Character/Material/DefaultTexture/T_CH_Noise",
+    "/Game/Character/Material/DefaultTexture/T_CH_specular",
+    "/Game/Character/Material/DefaultTexture/T_CH_Stockings",
+    "/Game/Effect/Material/Texture/T_EF_MUL_Cell",
+    "/Game/Effect/Material/Texture/T_EF_MUL_Flow_01",
+    "/Game/Environment/Common/MasterShader/Material_Instance/Toon/MI_ENV_Costume",
+    "/Game/Environment/Common/MasterShader/Material_Instance/Toon/MI_ENV_TreasureBox",
+    "/Game/Environment/Common/MasterShader/Texture/T_ENV_mst_halfmask_a"
+  ],
+  "shaderMaps": [
+    {
+      "hash": "27761a0e992f463e49a9894471131d98e2687d5d",
+      "library": "pakchunk100-WindowsClient_0_P__ShaderArchive-BLUEPROTOCOL_Chunk100-PCD3D_SM5",
+      "byteOffset": 33220,
+      "method": "exact-20-byte-hash-in-uexp",
+      "shaderCount": 76,
+      "shaders": [
+        {
+          "hash": "0275421810919d0b334bd03dd443b4f91aeea5db",
+          "stage": "vs",
+          "hlsl": "shaders/hlsl/vs/0275421810919d0b334bd03dd443b4f91aeea5db.hlsl",
+          "assembly": "shaders/assembly/vs/0275421810919d0b334bd03dd443b4f91aeea5db.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "4ac6e7acceb17a9ac2d6365da90d93c0c8aba9bbbb2f113e8fdf1edc1920d3c1"
+        },
+        {
+          "hash": "038f22aeb251d09e8f01c969598dd04d62c03061",
+          "stage": "vs",
+          "hlsl": "shaders/hlsl/vs/038f22aeb251d09e8f01c969598dd04d62c03061.hlsl",
+          "assembly": "shaders/assembly/vs/038f22aeb251d09e8f01c969598dd04d62c03061.msasm",
+          "needsManualFix": true,
+          "dxbcSha256": "bbab33a3c818d3fc2573f160cedf58dc3d8c66141300e2ac6868b6fb018dc707"
+        },
+        {
+          "hash": "045329ae84605fb6beddc9286b38860edeb846e6",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/045329ae84605fb6beddc9286b38860edeb846e6.hlsl",
+          "assembly": "shaders/assembly/ps/045329ae84605fb6beddc9286b38860edeb846e6.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "77745bf3d59f9a9f74f6260d56c6f69cda5174df465ee78cf25be9835c67b6c4"
+        },
+        {
+          "hash": "067792792bd42fb9b859e43a8e3194920b16a038",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/067792792bd42fb9b859e43a8e3194920b16a038.hlsl",
+          "assembly": "shaders/assembly/ps/067792792bd42fb9b859e43a8e3194920b16a038.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "10d179899b69e560b5b77fcbb13327149e5398e655e336dc4436782a9000bb28"
+        },
+        {
+          "hash": "08442385ebcacfca515fb09643236ba24bf893a9",
+          "stage": "vs",
+          "hlsl": "shaders/hlsl/vs/08442385ebcacfca515fb09643236ba24bf893a9.hlsl",
+          "assembly": "shaders/assembly/vs/08442385ebcacfca515fb09643236ba24bf893a9.msasm",
+          "needsManualFix": true,
+          "dxbcSha256": "3f8ae48e8cdde94f115836d3b6227a2cfe5c51b62ceb236727c211f4a6ceb471"
+        },
+        {
+          "hash": "14616cc66375eb1ae2cf6185f058faec9aad2339",
+          "stage": "gs",
+          "hlsl": "shaders/hlsl/gs/14616cc66375eb1ae2cf6185f058faec9aad2339.hlsl",
+          "assembly": "shaders/assembly/gs/14616cc66375eb1ae2cf6185f058faec9aad2339.msasm",
+          "needsManualFix": true,
+          "dxbcSha256": "21d73cb56a9aa76d23733ab2648221bec344d575cb9758e335b996cdba6f2afd"
+        },
+        {
+          "hash": "194cce088839d099184fed50451ac21e84bae540",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/194cce088839d099184fed50451ac21e84bae540.hlsl",
+          "assembly": "shaders/assembly/ps/194cce088839d099184fed50451ac21e84bae540.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "9a8ddc70167872a8305d4138839eaf149a20987feb9eee520e84a9e162fda2e0"
+        },
+        {
+          "hash": "1a47d622f44991137513de8202154842c14d3d39",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/1a47d622f44991137513de8202154842c14d3d39.hlsl",
+          "assembly": "shaders/assembly/ps/1a47d622f44991137513de8202154842c14d3d39.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "935dd43dc044bf79dc74c926c9b146d134b076cae9f79a8d54bbec11d67d2481"
+        },
+        {
+          "hash": "1bfc27367acfc0a421dc90bb246ce5b9bc79cbda",
+          "stage": "vs",
+          "hlsl": "shaders/hlsl/vs/1bfc27367acfc0a421dc90bb246ce5b9bc79cbda.hlsl",
+          "assembly": "shaders/assembly/vs/1bfc27367acfc0a421dc90bb246ce5b9bc79cbda.msasm",
+          "needsManualFix": true,
+          "dxbcSha256": "fd9d66992ef004b664edf7b4d0706988d2c5aad15311ae768791e6b931a1ccd6"
+        },
+        {
+          "hash": "1c2e85176782731fbbc83e77ba6f46c7a9df8f3b",
+          "stage": "vs",
+          "hlsl": "shaders/hlsl/vs/1c2e85176782731fbbc83e77ba6f46c7a9df8f3b.hlsl",
+          "assembly": "shaders/assembly/vs/1c2e85176782731fbbc83e77ba6f46c7a9df8f3b.msasm",
+          "needsManualFix": true,
+          "dxbcSha256": "e9cc8beed675a4d96009c860707d70400dffba3fb215b6c7b52fb5ee372743c7"
+        },
+        {
+          "hash": "1c67966d09bfd65345f34cded9945d6a8c0b42c6",
+          "stage": "vs",
+          "hlsl": "shaders/hlsl/vs/1c67966d09bfd65345f34cded9945d6a8c0b42c6.hlsl",
+          "assembly": "shaders/assembly/vs/1c67966d09bfd65345f34cded9945d6a8c0b42c6.msasm",
+          "needsManualFix": true,
+          "dxbcSha256": "89a6ff8c50783a97f58de0a8efa3806e94edfb1555b48e287d369d015e7258e1"
+        },
+        {
+          "hash": "2816ca04d439a102846cf91c01f2229cd7e95a3a",
+          "stage": "vs",
+          "hlsl": "shaders/hlsl/vs/2816ca04d439a102846cf91c01f2229cd7e95a3a.hlsl",
+          "assembly": "shaders/assembly/vs/2816ca04d439a102846cf91c01f2229cd7e95a3a.msasm",
+          "needsManualFix": true,
+          "dxbcSha256": "1551e6f612903b9038587a806ae19b00e1454d8a48eef9b8b8e9129fa9101330"
+        },
+        {
+          "hash": "284eddd642b614ef17ad78d14f6e155e11f44db1",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/284eddd642b614ef17ad78d14f6e155e11f44db1.hlsl",
+          "assembly": "shaders/assembly/ps/284eddd642b614ef17ad78d14f6e155e11f44db1.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "b6bdb6c7368eec566d528c88d50046ac19f6ff4c502bf0a968d59b69ed4ed257"
+        },
+        {
+          "hash": "2a28a4905a75819ff37c2089133f0b51c91d5998",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/2a28a4905a75819ff37c2089133f0b51c91d5998.hlsl",
+          "assembly": "shaders/assembly/ps/2a28a4905a75819ff37c2089133f0b51c91d5998.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "3241ed7a63bdac199857f38e4ebdca9a0e8d2929573c00b4c118a135e7e88908"
+        },
+        {
+          "hash": "2a6c250f3379bb1642e2eb5cf702aa49b074b917",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/2a6c250f3379bb1642e2eb5cf702aa49b074b917.hlsl",
+          "assembly": "shaders/assembly/ps/2a6c250f3379bb1642e2eb5cf702aa49b074b917.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "f0b67fd8b46eb1afac8738af8be9304082f7f0af5058d0e7342c4f095714bf3e"
+        },
+        {
+          "hash": "2cca4f7bc374b61a0cb251b86bd9d8c34ac1394e",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/2cca4f7bc374b61a0cb251b86bd9d8c34ac1394e.hlsl",
+          "assembly": "shaders/assembly/ps/2cca4f7bc374b61a0cb251b86bd9d8c34ac1394e.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "7c11867d738a060823eea52bb6cb3322697502949e857ad8f129949f5389a7dd"
+        },
+        {
+          "hash": "2fbbb2fb463d824080f4950bff48c8e1126c4dd8",
+          "stage": "vs",
+          "hlsl": "shaders/hlsl/vs/2fbbb2fb463d824080f4950bff48c8e1126c4dd8.hlsl",
+          "assembly": "shaders/assembly/vs/2fbbb2fb463d824080f4950bff48c8e1126c4dd8.msasm",
+          "needsManualFix": true,
+          "dxbcSha256": "c528d142d3f8e1a2d1a45f6e6dc4df94f889a2d85fe2e83b6138b69761dd0605"
+        },
+        {
+          "hash": "300742d7a7b7176287956f4adb99991086d40600",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/300742d7a7b7176287956f4adb99991086d40600.hlsl",
+          "assembly": "shaders/assembly/ps/300742d7a7b7176287956f4adb99991086d40600.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "c7ef9bc37bdd123554f0d789bd31167d9dbc3c41544b45bafc01704c105df9f9"
+        },
+        {
+          "hash": "33471efe07df32fe0352f8ea3cf41463394740fe",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/33471efe07df32fe0352f8ea3cf41463394740fe.hlsl",
+          "assembly": "shaders/assembly/ps/33471efe07df32fe0352f8ea3cf41463394740fe.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "262ff63b5373e3d0a22e2a2356e4ba8f3b6b574f02f80ff8783475cc4476106b"
+        },
+        {
+          "hash": "34ecfdee50f769e22d0d19387b3499cabb01e951",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/34ecfdee50f769e22d0d19387b3499cabb01e951.hlsl",
+          "assembly": "shaders/assembly/ps/34ecfdee50f769e22d0d19387b3499cabb01e951.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "1758b656512372187d1617566b13a92946b6fdd9e5f38ca6a97473ed52506d31"
+        },
+        {
+          "hash": "35dc7cd197990219fb1b38f1806b02d84f590081",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/35dc7cd197990219fb1b38f1806b02d84f590081.hlsl",
+          "assembly": "shaders/assembly/ps/35dc7cd197990219fb1b38f1806b02d84f590081.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "60100e8f7cc2f1c56c536d94242f75db7527e2b8b949f3dc1ac994dda09d8ab1"
+        },
+        {
+          "hash": "41659253a316c6558c962d998cbfa7c5d6ceadfd",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/41659253a316c6558c962d998cbfa7c5d6ceadfd.hlsl",
+          "assembly": "shaders/assembly/ps/41659253a316c6558c962d998cbfa7c5d6ceadfd.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "dd70b1815928f29b2122f3cbe38f2369c34ac644ae9bf9ad7b450350983a8c3b"
+        },
+        {
+          "hash": "4395f0674891e5333ca35d8b809740aa287ab643",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/4395f0674891e5333ca35d8b809740aa287ab643.hlsl",
+          "assembly": "shaders/assembly/ps/4395f0674891e5333ca35d8b809740aa287ab643.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "5cbca4b3b0ec2625612ed295897d9cc02b13162ff532c0f421be825dee35192e"
+        },
+        {
+          "hash": "45f935d6d9540c8482fd1b24ef5cc41da7d6c2ef",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/45f935d6d9540c8482fd1b24ef5cc41da7d6c2ef.hlsl",
+          "assembly": "shaders/assembly/ps/45f935d6d9540c8482fd1b24ef5cc41da7d6c2ef.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "4efc3da864625ace9552e3caa0412a60b4660fbe24e69dedf57415aa8eaa9294"
+        },
+        {
+          "hash": "47fffce9e6dff686ca8218db587360ae9b849a76",
+          "stage": "vs",
+          "hlsl": "shaders/hlsl/vs/47fffce9e6dff686ca8218db587360ae9b849a76.hlsl",
+          "assembly": "shaders/assembly/vs/47fffce9e6dff686ca8218db587360ae9b849a76.msasm",
+          "needsManualFix": true,
+          "dxbcSha256": "03b3c99afd149ee40cbe60db8a3e5be5d171e2505380924d87329b4386e7f876"
+        },
+        {
+          "hash": "48aef3b23d6ecc7b71367d0f5f6485f7fa343229",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/48aef3b23d6ecc7b71367d0f5f6485f7fa343229.hlsl",
+          "assembly": "shaders/assembly/ps/48aef3b23d6ecc7b71367d0f5f6485f7fa343229.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "7ee0eab36c2e128fba87ec6f82befd1f32c8ea01874740a5c593879bf3e60097"
+        },
+        {
+          "hash": "4e67eabb7982727b1afc0588ea91928e4e68d12a",
+          "stage": "vs",
+          "hlsl": "shaders/hlsl/vs/4e67eabb7982727b1afc0588ea91928e4e68d12a.hlsl",
+          "assembly": "shaders/assembly/vs/4e67eabb7982727b1afc0588ea91928e4e68d12a.msasm",
+          "needsManualFix": true,
+          "dxbcSha256": "c833e9185b718b83776789a852d13bf9f507074f257b757a785b561b52a0a497"
+        },
+        {
+          "hash": "4ed20a24bc56ac2f49443ba305d9b129ba7963c2",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/4ed20a24bc56ac2f49443ba305d9b129ba7963c2.hlsl",
+          "assembly": "shaders/assembly/ps/4ed20a24bc56ac2f49443ba305d9b129ba7963c2.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "1cf7fd79e17bcc645b63b1e2a42d52133ba217f2cd12a82bf2ad3f4e02d5c1fd"
+        },
+        {
+          "hash": "4f9a64485eb6faa6e043273f937ba0cc4fc773f1",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/4f9a64485eb6faa6e043273f937ba0cc4fc773f1.hlsl",
+          "assembly": "shaders/assembly/ps/4f9a64485eb6faa6e043273f937ba0cc4fc773f1.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "3ba82c96845da0fc995df7e24367a895bcb91654577bca00720f8e8938a83305"
+        },
+        {
+          "hash": "50cc1898cf9c216a53c0d63c396ed72149630e16",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/50cc1898cf9c216a53c0d63c396ed72149630e16.hlsl",
+          "assembly": "shaders/assembly/ps/50cc1898cf9c216a53c0d63c396ed72149630e16.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "c4866e6c05f5924ff344fdf3fbfdb5d96765093cae773b65b17347a83a2b7b3d"
+        },
+        {
+          "hash": "570701a1652320819264dbe5ed12a134cba12fb9",
+          "stage": "vs",
+          "hlsl": "shaders/hlsl/vs/570701a1652320819264dbe5ed12a134cba12fb9.hlsl",
+          "assembly": "shaders/assembly/vs/570701a1652320819264dbe5ed12a134cba12fb9.msasm",
+          "needsManualFix": true,
+          "dxbcSha256": "eedba315fae7eae87ace436ec988422de8918e673e9108e46c6f0703a6a0c745"
+        },
+        {
+          "hash": "692d332a336c10e6f6f70d2428ffc5b41de98e8f",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/692d332a336c10e6f6f70d2428ffc5b41de98e8f.hlsl",
+          "assembly": "shaders/assembly/ps/692d332a336c10e6f6f70d2428ffc5b41de98e8f.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "0f1ad28f01eda7e228daac9596f5f69f5f1efdae707bde0ecf9d8d824b157035"
+        },
+        {
+          "hash": "6994ab90c5ccd5dc610754a7408c97c889045af3",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/6994ab90c5ccd5dc610754a7408c97c889045af3.hlsl",
+          "assembly": "shaders/assembly/ps/6994ab90c5ccd5dc610754a7408c97c889045af3.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "b9d781977a896c34016d4d59fd0e1d29eb880adcc804fed1778dfd36637023c4"
+        },
+        {
+          "hash": "6cf525d2f9b1d8a60efdb71d0d157690a5026fa7",
+          "stage": "vs",
+          "hlsl": "shaders/hlsl/vs/6cf525d2f9b1d8a60efdb71d0d157690a5026fa7.hlsl",
+          "assembly": "shaders/assembly/vs/6cf525d2f9b1d8a60efdb71d0d157690a5026fa7.msasm",
+          "needsManualFix": true,
+          "dxbcSha256": "dc161f77e2618da88cc851a30b77ad2558d42a1517fff669e53aea56782d5d45"
+        },
+        {
+          "hash": "6d0ebae4fe015b2bb79c54b980354c4d484e6e44",
+          "stage": "vs",
+          "hlsl": "shaders/hlsl/vs/6d0ebae4fe015b2bb79c54b980354c4d484e6e44.hlsl",
+          "assembly": "shaders/assembly/vs/6d0ebae4fe015b2bb79c54b980354c4d484e6e44.msasm",
+          "needsManualFix": true,
+          "dxbcSha256": "42cb47c55f2d898d92f56ecf138ba502fce3156df993df46ec3e69e249e7707e"
+        },
+        {
+          "hash": "7572138e11c7b7d3bc2f28daf4cd02d07e989833",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/7572138e11c7b7d3bc2f28daf4cd02d07e989833.hlsl",
+          "assembly": "shaders/assembly/ps/7572138e11c7b7d3bc2f28daf4cd02d07e989833.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "9d6bf29564738be3f09aa47547bc97aa259cc6782cbff8fa0e3679343cc43328"
+        },
+        {
+          "hash": "75d312520ba70fd59993be11e431973273720a56",
+          "stage": "vs",
+          "hlsl": "shaders/hlsl/vs/75d312520ba70fd59993be11e431973273720a56.hlsl",
+          "assembly": "shaders/assembly/vs/75d312520ba70fd59993be11e431973273720a56.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "1a74160484dea7d5814ea5fddb70776621f68a8be6e3f31b7a47164de9222dac"
+        },
+        {
+          "hash": "7645d4b95212b45c294ac09856e063b9842ec454",
+          "stage": "vs",
+          "hlsl": "shaders/hlsl/vs/7645d4b95212b45c294ac09856e063b9842ec454.hlsl",
+          "assembly": "shaders/assembly/vs/7645d4b95212b45c294ac09856e063b9842ec454.msasm",
+          "needsManualFix": true,
+          "dxbcSha256": "de194d2970e7e58376e0414b8617c67bb48e7d6e46f74e06650dbad96735e2be"
+        },
+        {
+          "hash": "7911bf943967cfeb3361ae00e4eba9a252c3cf69",
+          "stage": "vs",
+          "hlsl": "shaders/hlsl/vs/7911bf943967cfeb3361ae00e4eba9a252c3cf69.hlsl",
+          "assembly": "shaders/assembly/vs/7911bf943967cfeb3361ae00e4eba9a252c3cf69.msasm",
+          "needsManualFix": true,
+          "dxbcSha256": "7a48854f1f72ffdf2c3dc42743b92bf703698d4fc5c74fe7fa6bcc1d3b230953"
+        },
+        {
+          "hash": "80be28f16de093453310e386a03de64d3244a85a",
+          "stage": "vs",
+          "hlsl": "shaders/hlsl/vs/80be28f16de093453310e386a03de64d3244a85a.hlsl",
+          "assembly": "shaders/assembly/vs/80be28f16de093453310e386a03de64d3244a85a.msasm",
+          "needsManualFix": true,
+          "dxbcSha256": "4f7758cb398e792b560890aefedeec850457a1faad6d48f50518257dd530c729"
+        },
+        {
+          "hash": "89c23e1cf98f99ccbfbb4d5f2a7be0ead269e190",
+          "stage": "vs",
+          "hlsl": "shaders/hlsl/vs/89c23e1cf98f99ccbfbb4d5f2a7be0ead269e190.hlsl",
+          "assembly": "shaders/assembly/vs/89c23e1cf98f99ccbfbb4d5f2a7be0ead269e190.msasm",
+          "needsManualFix": true,
+          "dxbcSha256": "687cf83fdf55b716673be862218269624d8baf3c6da8aeee117ac158fcef2a36"
+        },
+        {
+          "hash": "8b425746eb350c8e1e6dccc02c6ace489fda8d83",
+          "stage": "vs",
+          "hlsl": "shaders/hlsl/vs/8b425746eb350c8e1e6dccc02c6ace489fda8d83.hlsl",
+          "assembly": "shaders/assembly/vs/8b425746eb350c8e1e6dccc02c6ace489fda8d83.msasm",
+          "needsManualFix": true,
+          "dxbcSha256": "e66717dac06d742290d4a9c99179efb12deb36bfc7217d9a699860b99a6ff101"
+        },
+        {
+          "hash": "9498cd6f810b48aeada1bf2befed850d91bae56a",
+          "stage": "vs",
+          "hlsl": "shaders/hlsl/vs/9498cd6f810b48aeada1bf2befed850d91bae56a.hlsl",
+          "assembly": "shaders/assembly/vs/9498cd6f810b48aeada1bf2befed850d91bae56a.msasm",
+          "needsManualFix": true,
+          "dxbcSha256": "31aa5c45edbd60e4092a6894f3f217acab5e13d61bdf3ee91faa3bece82fa6fd"
+        },
+        {
+          "hash": "9bc1cdfadd1b80fc81d2c1b8c1442b59dc873273",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/9bc1cdfadd1b80fc81d2c1b8c1442b59dc873273.hlsl",
+          "assembly": "shaders/assembly/ps/9bc1cdfadd1b80fc81d2c1b8c1442b59dc873273.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "909706920568e3efc95b201ca5684b0c88fe8827d04dfcdcad2c0ae725888503"
+        },
+        {
+          "hash": "9c93cfd2ce8affd120b3d0b21edac926e59fdee7",
+          "stage": "gs",
+          "hlsl": "shaders/hlsl/gs/9c93cfd2ce8affd120b3d0b21edac926e59fdee7.hlsl",
+          "assembly": "shaders/assembly/gs/9c93cfd2ce8affd120b3d0b21edac926e59fdee7.msasm",
+          "needsManualFix": true,
+          "dxbcSha256": "70e7fb6a7fdbca53d9c1ea2e5b7045bcca70602980795a8889419e9f7502da99"
+        },
+        {
+          "hash": "a1cfccd8ae20d008808c3c2a493bfa31bb958991",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/a1cfccd8ae20d008808c3c2a493bfa31bb958991.hlsl",
+          "assembly": "shaders/assembly/ps/a1cfccd8ae20d008808c3c2a493bfa31bb958991.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "9c6fa4ec6d1f48e3b43f470a5c760d39ab056b66e52245a5c0508e1fdd6f7d64"
+        },
+        {
+          "hash": "a3049ac62a657a97aa21a62034479ee3f3b509bb",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/a3049ac62a657a97aa21a62034479ee3f3b509bb.hlsl",
+          "assembly": "shaders/assembly/ps/a3049ac62a657a97aa21a62034479ee3f3b509bb.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "11be5d0b2da729df94bdf98603239b65b15b6998528da04575a20347fa468a91"
+        },
+        {
+          "hash": "aa09d03e762ce7a22f40e68c463df034e216463f",
+          "stage": "vs",
+          "hlsl": "shaders/hlsl/vs/aa09d03e762ce7a22f40e68c463df034e216463f.hlsl",
+          "assembly": "shaders/assembly/vs/aa09d03e762ce7a22f40e68c463df034e216463f.msasm",
+          "needsManualFix": true,
+          "dxbcSha256": "afed4db9de26a5191b27fa940f9905f80c430ddcda481ba7cef9bbe3675cc3ff"
+        },
+        {
+          "hash": "abff3969e2d2885bf776ac6582b61f36b9bad042",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/abff3969e2d2885bf776ac6582b61f36b9bad042.hlsl",
+          "assembly": "shaders/assembly/ps/abff3969e2d2885bf776ac6582b61f36b9bad042.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "75e23c7dc8fe55dce3774960c51526df0ab51c3296ae4f352df52f18567522b0"
+        },
+        {
+          "hash": "ac0169b2e4d08da78152779a57601107129e679a",
+          "stage": "vs",
+          "hlsl": "shaders/hlsl/vs/ac0169b2e4d08da78152779a57601107129e679a.hlsl",
+          "assembly": "shaders/assembly/vs/ac0169b2e4d08da78152779a57601107129e679a.msasm",
+          "needsManualFix": true,
+          "dxbcSha256": "dba47b56ac19e52a4a157a80f2d2b35f41ea02941aa884c108767cd30af25d85"
+        },
+        {
+          "hash": "aeecf6eeb0ef23b57e8ac0f0dfecebb311daad03",
+          "stage": "vs",
+          "hlsl": "shaders/hlsl/vs/aeecf6eeb0ef23b57e8ac0f0dfecebb311daad03.hlsl",
+          "assembly": "shaders/assembly/vs/aeecf6eeb0ef23b57e8ac0f0dfecebb311daad03.msasm",
+          "needsManualFix": true,
+          "dxbcSha256": "d990265c9f9a3e43a62598a700c1117a5474904684790b05fc4cf506f64bab1d"
+        },
+        {
+          "hash": "b01c02b5b17e4722fd9c662e668f4fa454dd486a",
+          "stage": "vs",
+          "hlsl": "shaders/hlsl/vs/b01c02b5b17e4722fd9c662e668f4fa454dd486a.hlsl",
+          "assembly": "shaders/assembly/vs/b01c02b5b17e4722fd9c662e668f4fa454dd486a.msasm",
+          "needsManualFix": true,
+          "dxbcSha256": "6b895f7ad5bc2669097c89b50de9b26a4ec755d78962d4d9eed64a08a2ec6bcc"
+        },
+        {
+          "hash": "b41a0b5df6f6fe9aa606747adf3475e8c72f8ed2",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/b41a0b5df6f6fe9aa606747adf3475e8c72f8ed2.hlsl",
+          "assembly": "shaders/assembly/ps/b41a0b5df6f6fe9aa606747adf3475e8c72f8ed2.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "1be23835d7bfb3c4b26761e2a703850a6aad68e75c312b48d50972b1353d2105"
+        },
+        {
+          "hash": "b49b6c68286641e90f7ec19df5e6469605695f30",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/b49b6c68286641e90f7ec19df5e6469605695f30.hlsl",
+          "assembly": "shaders/assembly/ps/b49b6c68286641e90f7ec19df5e6469605695f30.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "3b36c81dfa7c8e17a3b62d0905264874cb0d67c3fbdf804f01d73c66b068e3d8"
+        },
+        {
+          "hash": "b66b64279c1ebff68ac5c0a7b0e4bce1b2a05ae3",
+          "stage": "vs",
+          "hlsl": "shaders/hlsl/vs/b66b64279c1ebff68ac5c0a7b0e4bce1b2a05ae3.hlsl",
+          "assembly": "shaders/assembly/vs/b66b64279c1ebff68ac5c0a7b0e4bce1b2a05ae3.msasm",
+          "needsManualFix": true,
+          "dxbcSha256": "efb456742fd7b1343b0c740c8f2b5cf7c9c9669fe24725d0e2c50081e34835ab"
+        },
+        {
+          "hash": "b753a5759c57d6897abf4d4c5f54f44157083ce0",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/b753a5759c57d6897abf4d4c5f54f44157083ce0.hlsl",
+          "assembly": "shaders/assembly/ps/b753a5759c57d6897abf4d4c5f54f44157083ce0.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "c0286e207f6bab6e3a8f322663551724a54c7d99683e623b56903dc7379d5a77"
+        },
+        {
+          "hash": "b7695ebe675ebbc57fe2b65f65c71faa7efe70df",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/b7695ebe675ebbc57fe2b65f65c71faa7efe70df.hlsl",
+          "assembly": "shaders/assembly/ps/b7695ebe675ebbc57fe2b65f65c71faa7efe70df.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "9b5201aa77f64e323341224c3a06dc54c89557957d1f9dae8f3f580a2ab1c5a7"
+        },
+        {
+          "hash": "b88dd07ce60167ed2a988b0ceb7c6c421d5e7e5d",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/b88dd07ce60167ed2a988b0ceb7c6c421d5e7e5d.hlsl",
+          "assembly": "shaders/assembly/ps/b88dd07ce60167ed2a988b0ceb7c6c421d5e7e5d.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "034cc9b82ae0e91c6ffc12f13c9a26d84b0a8b2dbb3a903c8638932869ec3c74"
+        },
+        {
+          "hash": "b970e39af77a665b6e95ef2821b52139770354ae",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/b970e39af77a665b6e95ef2821b52139770354ae.hlsl",
+          "assembly": "shaders/assembly/ps/b970e39af77a665b6e95ef2821b52139770354ae.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "5d7ebd7dc10112b70b2babb1a15462d0a442e17eaf4328bf8cc920765bfaae87"
+        },
+        {
+          "hash": "ba25d66a38628b426ee65eee3daff5871ccf815b",
+          "stage": "vs",
+          "hlsl": "shaders/hlsl/vs/ba25d66a38628b426ee65eee3daff5871ccf815b.hlsl",
+          "assembly": "shaders/assembly/vs/ba25d66a38628b426ee65eee3daff5871ccf815b.msasm",
+          "needsManualFix": true,
+          "dxbcSha256": "2f850d8d6e1680c57a221f38a1b9a079b53e757663fee06ef79e0f0a11fb3de5"
+        },
+        {
+          "hash": "ba7645bed1d7dfbe99bf80811c69ac54ea0eb060",
+          "stage": "vs",
+          "hlsl": "shaders/hlsl/vs/ba7645bed1d7dfbe99bf80811c69ac54ea0eb060.hlsl",
+          "assembly": "shaders/assembly/vs/ba7645bed1d7dfbe99bf80811c69ac54ea0eb060.msasm",
+          "needsManualFix": true,
+          "dxbcSha256": "ea025b13f54c7d2ec0940d8ce37a9c8740e688d316b254325804c018040d97c6"
+        },
+        {
+          "hash": "bf7c065ac3b9657fcd57341ab64053d36d9d1618",
+          "stage": "vs",
+          "hlsl": "shaders/hlsl/vs/bf7c065ac3b9657fcd57341ab64053d36d9d1618.hlsl",
+          "assembly": "shaders/assembly/vs/bf7c065ac3b9657fcd57341ab64053d36d9d1618.msasm",
+          "needsManualFix": true,
+          "dxbcSha256": "54d684f2b47cae8089b31ae368cdf0a9a0b59c8aa589c1916d7b1cd23d3eec99"
+        },
+        {
+          "hash": "c0e40256c4d97ec0c1a9f6784382b052a42bc582",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/c0e40256c4d97ec0c1a9f6784382b052a42bc582.hlsl",
+          "assembly": "shaders/assembly/ps/c0e40256c4d97ec0c1a9f6784382b052a42bc582.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "44ccc504659bc6e054ced6981283c3bea97f8550159ff6574484cef861b9f73f"
+        },
+        {
+          "hash": "c60b49ebc2a3e0535e19a9da2343e5c010e13482",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/c60b49ebc2a3e0535e19a9da2343e5c010e13482.hlsl",
+          "assembly": "shaders/assembly/ps/c60b49ebc2a3e0535e19a9da2343e5c010e13482.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "555dd3aca1216c890318d0ae5c56580af990ad1b078665e2f4cb82329d96685a"
+        },
+        {
+          "hash": "d25878836c1b1fb81c467d4097990f5641aac81f",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/d25878836c1b1fb81c467d4097990f5641aac81f.hlsl",
+          "assembly": "shaders/assembly/ps/d25878836c1b1fb81c467d4097990f5641aac81f.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "b24d437f0be64612de3c9f1dd3ea0cb94ab0818ef7fc16fbc3123fe7bccede34"
+        },
+        {
+          "hash": "dd89feeb62b4276e15c806570b77f5a995636c20",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/dd89feeb62b4276e15c806570b77f5a995636c20.hlsl",
+          "assembly": "shaders/assembly/ps/dd89feeb62b4276e15c806570b77f5a995636c20.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "af93b3a93e6bb7b5ccebf546f7e82d4be28dc3afacb18104bea5e6881a87370e"
+        },
+        {
+          "hash": "df6b592686cac20ddc45691110a243a59cb5c381",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/df6b592686cac20ddc45691110a243a59cb5c381.hlsl",
+          "assembly": "shaders/assembly/ps/df6b592686cac20ddc45691110a243a59cb5c381.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "156e02a645776466bcd05bc1e0b623da75f4bab7b54ee5b390bdbd3413b38294"
+        },
+        {
+          "hash": "ec5ed5f08cbcbdbd01dd85d434f37e29d50847e8",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/ec5ed5f08cbcbdbd01dd85d434f37e29d50847e8.hlsl",
+          "assembly": "shaders/assembly/ps/ec5ed5f08cbcbdbd01dd85d434f37e29d50847e8.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "746550f54932494f76d1ad356086ad21fda973c1389bf88f4cf512d922c4a8f3"
+        },
+        {
+          "hash": "ee6ff60a531b9d9446dd1082d364ca2aa382c59c",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/ee6ff60a531b9d9446dd1082d364ca2aa382c59c.hlsl",
+          "assembly": "shaders/assembly/ps/ee6ff60a531b9d9446dd1082d364ca2aa382c59c.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "effe876afad90f5b0931221eb7d4a9b13241f9da05c961fb5a67f2452a7ea820"
+        },
+        {
+          "hash": "ee756ff5d15c846ba67bb8315b76856d015e1105",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/ee756ff5d15c846ba67bb8315b76856d015e1105.hlsl",
+          "assembly": "shaders/assembly/ps/ee756ff5d15c846ba67bb8315b76856d015e1105.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "6c83b50181ed5fa1fa43a47c558eb2a314220713c2089136bb8f22f9edeedaaa"
+        },
+        {
+          "hash": "f3266c753e8d1c88e31d2238eead266b6cb01ae2",
+          "stage": "vs",
+          "hlsl": "shaders/hlsl/vs/f3266c753e8d1c88e31d2238eead266b6cb01ae2.hlsl",
+          "assembly": "shaders/assembly/vs/f3266c753e8d1c88e31d2238eead266b6cb01ae2.msasm",
+          "needsManualFix": true,
+          "dxbcSha256": "5fb49e30776857ce11109300e244852dbc591225274399b6b7ebdf590cc43e0a"
+        },
+        {
+          "hash": "f34de5c57a6c715d10fb3093d5f5dd13f7e7abee",
+          "stage": "vs",
+          "hlsl": "shaders/hlsl/vs/f34de5c57a6c715d10fb3093d5f5dd13f7e7abee.hlsl",
+          "assembly": "shaders/assembly/vs/f34de5c57a6c715d10fb3093d5f5dd13f7e7abee.msasm",
+          "needsManualFix": true,
+          "dxbcSha256": "090e3bc788560dc01090c547fae51ae7a0d2c3b3257a7dc4f3cc9c519f8c2183"
+        },
+        {
+          "hash": "f5ccd1c5091c6a3c5a5c326c849d47e1be3a5358",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/f5ccd1c5091c6a3c5a5c326c849d47e1be3a5358.hlsl",
+          "assembly": "shaders/assembly/ps/f5ccd1c5091c6a3c5a5c326c849d47e1be3a5358.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "8be3c94c07bf77468b433b345872b5eef944408253dbbafbb0bb9b2128d42250"
+        },
+        {
+          "hash": "f6e0e6ca4a3df6b28d339991edb15356ac2188e2",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/f6e0e6ca4a3df6b28d339991edb15356ac2188e2.hlsl",
+          "assembly": "shaders/assembly/ps/f6e0e6ca4a3df6b28d339991edb15356ac2188e2.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "179a42ebafc210a71a492958c618563eac7014f6545319d7a732cd4a521463fa"
+        },
+        {
+          "hash": "f9478722f4fb53846dec5473b97db65e561916e2",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/f9478722f4fb53846dec5473b97db65e561916e2.hlsl",
+          "assembly": "shaders/assembly/ps/f9478722f4fb53846dec5473b97db65e561916e2.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "371c99059462ac6030c7162914cc45780b387c788a5d03c7060f7cbf44f52df6"
+        },
+        {
+          "hash": "fa70bf7ea393ce8b003af78cb164c6f0349110a6",
+          "stage": "ps",
+          "hlsl": "shaders/hlsl/ps/fa70bf7ea393ce8b003af78cb164c6f0349110a6.hlsl",
+          "assembly": "shaders/assembly/ps/fa70bf7ea393ce8b003af78cb164c6f0349110a6.msasm",
+          "needsManualFix": false,
+          "dxbcSha256": "e31bd013a3ca9e98be4c24258b267f18ab4a8b43244e144a8bc6f63176b63d8b"
+        }
+      ]
+    }
+  ]
+}

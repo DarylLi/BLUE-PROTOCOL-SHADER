@@ -1,0 +1,63 @@
+// Decompiled with 3Dmigoto 1.3.16. Reconstructed HLSL; not original source.
+Texture2D<float4> t1 : register(t1);
+
+Texture2D<float4> t0 : register(t0);
+
+SamplerState s1_s : register(s1);
+
+SamplerState s0_s : register(s0);
+
+cbuffer cb0 : register(b0)
+{
+  float4 cb0[59];
+}
+
+
+
+
+// 3Dmigoto declarations
+#define cmp -
+
+
+void main(
+  linear noperspective float4 v0 : TEXCOORD0,
+  linear noperspective float4 v1 : TEXCOORD1,
+  linear noperspective float4 v2 : TEXCOORD2,
+  linear noperspective float4 v3 : TEXCOORD3,
+  linear noperspective float4 v4 : TEXCOORD4,
+  linear noperspective float4 v5 : TEXCOORD5,
+  linear noperspective float4 v6 : TEXCOORD6,
+  out float4 o0 : SV_Target0)
+{
+  float4 r0,r1;
+  uint4 bitmask, uiDest;
+  float4 fDest;
+
+  r0.xyzw = t0.SampleLevel(s0_s, v1.zw, 0).xyzw;
+  r0.xyzw = cb0[48].xyzw * r0.xyzw;
+  r1.xyzw = t0.SampleLevel(s0_s, v1.xy, 0).xyzw;
+  r0.xyzw = r1.xyzw * cb0[47].xyzw + r0.xyzw;
+  r1.xyzw = t0.SampleLevel(s0_s, v2.xy, 0).xyzw;
+  r0.xyzw = r1.xyzw * cb0[49].xyzw + r0.xyzw;
+  r1.xyzw = t0.SampleLevel(s0_s, v2.zw, 0).xyzw;
+  r0.xyzw = r1.xyzw * cb0[50].xyzw + r0.xyzw;
+  r1.xyzw = t0.SampleLevel(s0_s, v3.xy, 0).xyzw;
+  r0.xyzw = r1.xyzw * cb0[51].xyzw + r0.xyzw;
+  r1.xyzw = t0.SampleLevel(s0_s, v3.zw, 0).xyzw;
+  r0.xyzw = r1.xyzw * cb0[52].xyzw + r0.xyzw;
+  r1.xyzw = t0.SampleLevel(s0_s, v4.xy, 0).xyzw;
+  r0.xyzw = r1.xyzw * cb0[53].xyzw + r0.xyzw;
+  r1.xyzw = t0.SampleLevel(s0_s, v4.zw, 0).xyzw;
+  r0.xyzw = r1.xyzw * cb0[54].xyzw + r0.xyzw;
+  r1.xyzw = t0.SampleLevel(s0_s, v5.xy, 0).xyzw;
+  r0.xyzw = r1.xyzw * cb0[55].xyzw + r0.xyzw;
+  r1.xyzw = t0.SampleLevel(s0_s, v5.zw, 0).xyzw;
+  r0.xyzw = r1.xyzw * cb0[56].xyzw + r0.xyzw;
+  r1.xyzw = t0.SampleLevel(s0_s, v6.xy, 0).xyzw;
+  r0.xyzw = r1.xyzw * cb0[57].xyzw + r0.xyzw;
+  r1.xyzw = t0.SampleLevel(s0_s, v6.zw, 0).xyzw;
+  r0.xyzw = r1.xyzw * cb0[58].xyzw + r0.xyzw;
+  r1.xyzw = t1.SampleLevel(s1_s, v0.xy, 0).xyzw;
+  o0.xyzw = r1.xyzw + r0.xyzw;
+  return;
+}

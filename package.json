@@ -1,0 +1,23 @@
+{
+  "name": "blueprotocol-shader-lab",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "BLUE PROTOCOL cooked shader and material research",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "verify": "node tools/verify-project.mjs",
+    "index": "node tools/index-paks.mjs",
+    "extract:shaders": "node tools/extract-shader-libraries.mjs",
+    "decode": "node tools/export-shaders.mjs",
+    "extract:materials": "node tools/extract-core-materials.mjs",
+    "materials:json": "node tools/export-material-json.mjs",
+    "materials:link": "node tools/summarize-materials.mjs",
+    "decompile:core": "node tools/decompile-shaders.mjs",
+    "decompile:materials": "node tools/decompile-shaders.mjs --materials",
+    "decompile:recover": "node tools/recover-readable-shaders.mjs",
+    "sample:select": "node tools/select-validation-samples.mjs",
+    "import:analysis": "node tools/import-analysis.mjs",
+    "test": "node --test tests/shader-archive.test.mjs"
+  }
+}
